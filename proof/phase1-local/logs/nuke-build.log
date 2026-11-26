@@ -1,0 +1,372 @@
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1901: Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1902: Package 'System.Security.Cryptography.Pkcs' 9.0.6 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2fmv-rv2c-59x7
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Pkcs' 9.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-846f-f764-76mx
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-23rf-6693-g89p
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-6588-8gv4-xfgh
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7hqp-7c5m-4vq6
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8q5v-6pqq-x66h
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-c399-9853-6jmj
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cvvh-rhrc-wg4q
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8r8-53c2-pm3f
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-mmjf-rqrv-855v
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-r955-8q5j-3h83
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1901: Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1902: Package 'System.Security.Cryptography.Pkcs' 9.0.6 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2fmv-rv2c-59x7
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Pkcs' 9.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-846f-f764-76mx
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-23rf-6693-g89p
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-6588-8gv4-xfgh
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7hqp-7c5m-4vq6
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8q5v-6pqq-x66h
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-c399-9853-6jmj
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cvvh-rhrc-wg4q
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8r8-53c2-pm3f
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-mmjf-rqrv-855v
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-r955-8q5j-3h83
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf
+​
+███╗   ██╗██╗   ██╗██╗  ██╗███████╗
+████╗  ██║██║   ██║██║ ██╔╝██╔════╝
+██╔██╗ ██║██║   ██║█████╔╝ █████╗  
+██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝  
+██║ ╚████║╚██████╔╝██║  ██╗███████╗
+╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+​
+NUKE Execution Engine version 10.1.0 (Windows,.NETCoreApp,Version=v10.0)
+​
+11:12:44 [WRN] Exception was suppressed
+Microsoft.Build.Exceptions.InvalidProjectFileException: The expression "[MSBuild]::GetTargetFrameworkIdentifier(net10.0)" cannot be evaluated. Could not load file or assembly 'NuGet.Frameworks, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. The located assembly's manifest definition does not match the assembly reference. (0x80131040)  C:\Program Files\dotnet\sdk\10.0.404\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets
+   at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IElementLocation elementLocation, String resourceName, Object[] args)
+   at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1,T2](IElementLocation elementLocation, String resourceName, T1 arg0, T2 arg1)
+   at Microsoft.Build.Evaluation.Expander`2.Function.Execute(Object objectInstance, IPropertyProvider`1 properties, ExpanderOptions options, IElementLocation elementLocation)
+   at Microsoft.Build.Evaluation.Expander`2.PropertyExpander.ExpandPropertyBody(String propertyBody, Object propertyValue, IPropertyProvider`1 properties, ExpanderOptions options, IElementLocation elementLocation, PropertiesUseTracker propertiesUseTracker, IFileSystem fileSystem)
+   at Microsoft.Build.Evaluation.Expander`2.PropertyExpander.ExpandPropertiesLeaveTypedAndEscaped(String expression, IPropertyProvider`1 properties, ExpanderOptions options, IElementLocation elementLocation, PropertiesUseTracker propertiesUseTracker, IFileSystem fileSystem)
+   at Microsoft.Build.Evaluation.Expander`2.ExpandIntoStringLeaveEscaped(String expression, ExpanderOptions options, IElementLocation elementLocation)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluatePropertyElement(ProjectPropertyElement propertyElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluatePropertyGroupElement(ProjectPropertyGroupElement propertyGroupElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+   at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ICollection`1 propertiesFromCommandLine, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory directoryCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, Boolean interactive)
+   at Microsoft.Build.Evaluation.Project.FromProjectRootElement(ProjectRootElement rootElement, ProjectOptions options)
+   at Nuke.Common.ProjectModel.ProjectModelTasks.ParseProject(String projectFile, String configuration, String targetFramework) in /_/source/Nuke.ProjectModel/ProjectModelTasks.cs:line 97
+   at Nuke.Common.Execution.Telemetry.CheckAwareness() in /_/source/Nuke.Build/Telemetry/Telemetry.cs:line 73
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+​
+╬════════════
+║ Restore
+╬═══
+​
+11:12:44 [INF] > "C:\Program Files\dotnet\dotnet.exe" restore C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\GridMeter.sln
+11:12:47 [DBG]   Determining projects to restore...
+11:12:48 [DBG]   All projects are up-to-date for restore.
+​
+╬════════════
+║ Compile
+╬═══
+​
+11:12:49 [INF] > "C:\Program Files\dotnet\dotnet.exe" build C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\GridMeter.sln --configuration Debug --no-restore
+11:12:53 [DBG]   GridMeter.MeterParser.Lambda -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.MeterParser.Lambda\bin\Debug\net10.0\GridMeter.MeterParser.Lambda.dll
+11:12:54 [DBG]   GridMeter.MeterParser.LocalRunner -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.MeterParser.LocalRunner\bin\Debug\net10.0\GridMeter.MeterParser.LocalRunner.dll
+11:12:55 [DBG]   GridMeter.PriceMock -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.PriceMock\bin\Debug\net10.0\GridMeter.PriceMock.dll
+11:12:55 [DBG]   GridMeter.Domain -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Domain\bin\Debug\net10.0\GridMeter.Domain.dll
+11:12:56 [DBG]   GridMeter.Application -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Application\bin\Debug\net10.0\GridMeter.Application.dll
+11:12:57 [DBG]   GridMeter.UnitTests -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.UnitTests\bin\Debug\net10.0\GridMeter.UnitTests.dll
+11:12:57 [DBG]   GridMeter.Infrastructure -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Infrastructure\bin\Debug\net10.0\GridMeter.Infrastructure.dll
+11:12:57 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:12:59 [DBG]   GridMeter.Api -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Api\bin\Debug\net10.0\GridMeter.Api.dll
+11:12:59 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:13:01 [DBG]   GridMeter.ArchTests -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.ArchTests\bin\Debug\net10.0\GridMeter.ArchTests.dll
+11:13:01 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:13:01 [DBG]   GridMeter.IntegrationTests -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.IntegrationTests\bin\Debug\net10.0\GridMeter.IntegrationTests.dll
+11:13:02 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:13:02 [DBG] 
+11:13:02 [DBG] Build succeeded.
+11:13:02 [DBG]     0 Warning(s)
+11:13:02 [DBG]     0 Error(s)
+11:13:02 [DBG] 
+11:13:02 [DBG] Time Elapsed 00:00:11.97
+​
+╬═══════════════════
+║ GenerateClient
+╬══════════
+​
+11:13:07 [INF] > C:\Users\ThinkPad\.dotnet\tools\kiota.exe generate -l typescript -d "C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\.local\openapi.json" -c ApiClient -o "C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\web\src\api\generated" --clean-output --exclude-backward-compatible
+11:13:07 [DBG] Warning: the TypeScript language is in preview (Preview) some features are not fully supported and source breaking changes will happen with future updates.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/paths/~1api~1sites~1{id}~1consumption/get/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/paths/~1api~1sites~1{id}~1estimate/get/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/paths/~1api~1sites~1{id}~1demand-response/post/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/paths/~1api~1sites~1{id}~1demand-response/get/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/paths/~1api~1sites~1{id}/get/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/paths/~1api~1sites~1{id}~1meters/post/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/components/schemas/DemandResponseIssuedDto/properties/eventId - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/components/schemas/DemandResponseDto/properties/id - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/components/schemas/SiteDto/properties/id - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/components/schemas/SiteDetailDto/properties/id - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:08 [DBG] warn: Kiota.Builder.KiotaBuilder[534942631]
+11:13:08 [DBG]       OpenAPI warning: #/components/schemas/MeterDto/properties/id - The format guid is not supported by Kiota for the type String and will be ignored.
+11:13:09 [DBG] Generation completed successfully
+11:13:09 [DBG] Client base url set to http://localhost:5199
+11:13:09 [DBG] 
+11:13:09 [DBG] Hint: use the info command to get the list of dependencies you need to add to your project.
+11:13:09 [DBG] Example: kiota info -d "C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\.local\openapi.json" -l TypeScript
+11:13:09 [DBG] 
+11:13:09 [DBG] Hint: use the --include-path and --exclude-path options with glob patterns to filter the paths generated.
+11:13:09 [DBG] Example: kiota generate --include-path "**/foo" -d "C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\.local\openapi.json"
+​
+╬════════════════
+║ DockerBuild
+╬═══════
+​
+11:13:10 [INF] > "C:\Program Files\Docker\Docker\resources\bin\docker.exe" build --target api --tag gridmeter/api:local .
+11:13:12 [DBG] #0 building with "desktop-linux" instance using docker driver
+11:13:12 [DBG] 
+11:13:12 [DBG] #1 [internal] load build definition from Dockerfile
+11:13:12 [DBG] #1 transferring dockerfile: 1.03kB 0.1s done
+11:13:12 [DBG] #1 DONE 0.1s
+11:13:12 [DBG] 
+11:13:12 [DBG] #2 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0
+11:13:12 [DBG] #2 DONE 0.3s
+11:13:12 [DBG] 
+11:13:12 [DBG] #3 [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:10.0
+11:13:12 [DBG] #3 DONE 0.3s
+11:13:12 [DBG] 
+11:13:12 [DBG] #4 [internal] load .dockerignore
+11:13:12 [DBG] #4 transferring context: 98B 0.0s done
+11:13:12 [DBG] #4 DONE 0.0s
+11:13:12 [DBG] 
+11:13:12 [DBG] #5 [internal] load build context
+11:13:12 [DBG] #5 DONE 0.0s
+11:13:12 [DBG] 
+11:13:12 [DBG] #6 [build 1/6] FROM mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d
+11:13:12 [DBG] #6 resolve mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d 0.1s done
+11:13:12 [DBG] #6 DONE 0.1s
+11:13:12 [DBG] 
+11:13:12 [DBG] #7 [api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:10.0@sha256:aac50ceef10391e78a899e3d2ccd00bbafa2dcb56ccf4586cbccf00edb84fc21
+11:13:12 [DBG] #7 resolve mcr.microsoft.com/dotnet/aspnet:10.0@sha256:aac50ceef10391e78a899e3d2ccd00bbafa2dcb56ccf4586cbccf00edb84fc21 0.1s done
+11:13:12 [DBG] #7 DONE 0.1s
+11:13:12 [DBG] 
+11:13:12 [DBG] #5 [internal] load build context
+11:13:12 [DBG] #5 transferring context: 5.59kB 0.1s done
+11:13:12 [DBG] #5 DONE 0.1s
+11:13:12 [DBG] 
+11:13:12 [DBG] #8 [build 3/6] COPY GridMeter.sln ./
+11:13:13 [DBG] #8 CACHED
+11:13:13 [DBG] 
+11:13:13 [DBG] #9 [build 2/6] WORKDIR /src
+11:13:13 [DBG] #9 CACHED
+11:13:13 [DBG] 
+11:13:13 [DBG] #10 [build 4/6] COPY src/ src/
+11:13:13 [DBG] #10 CACHED
+11:13:13 [DBG] 
+11:13:13 [DBG] #11 [build 5/6] COPY tests/ tests/
+11:13:13 [DBG] #11 CACHED
+11:13:13 [DBG] 
+11:13:13 [DBG] #12 [build 6/6] RUN dotnet publish src/GridMeter.Api -c Release -o /out/api --nologo  && dotnet publish src/GridMeter.PriceMock -c Release -o /out/pricemock --nologo  && dotnet publish src/GridMeter.MeterParser.LocalRunner -c Release -o /out/parser --nologo
+11:13:13 [DBG] #12 CACHED
+11:13:13 [DBG] 
+11:13:13 [DBG] #13 [api 2/3] WORKDIR /app
+11:13:13 [DBG] #13 CACHED
+11:13:13 [DBG] 
+11:13:13 [DBG] #14 [api 3/3] COPY --from=build /out/api .
+11:13:13 [DBG] #14 CACHED
+11:13:13 [DBG] 
+11:13:13 [DBG] #15 exporting to image
+11:13:13 [DBG] #15 exporting layers 0.0s done
+11:13:13 [DBG] #15 exporting manifest sha256:01584f47c0573b3320d2e05fc5ae72a9178ae129721c6d6ec5dc79f814bca5f5 0.1s done
+11:13:13 [DBG] #15 exporting config sha256:f9f2a3e220fc0df450272da509fe00a2e0aae496724710a6af63427fd727860c
+11:13:13 [DBG] #15 exporting config sha256:f9f2a3e220fc0df450272da509fe00a2e0aae496724710a6af63427fd727860c 0.0s done
+11:13:13 [DBG] #15 exporting attestation manifest sha256:287afa75d34e99cd781bf90b78e98ed8676bfbac049a511fc54e8bcb3b57e30c 0.0s done
+11:13:13 [DBG] #15 exporting manifest list sha256:eeadcb0f040a2f5f182f4a<ACCOUNT_ID>40e0621725c29f69a7c20de9266475
+11:13:13 [DBG] #15 exporting manifest list sha256:eeadcb0f040a2f5f182f4a<ACCOUNT_ID>40e0621725c29f69a7c20de9266475 0.0s done
+11:13:13 [DBG] #15 naming to docker.io/gridmeter/api:local done
+11:13:13 [DBG] #15 unpacking to docker.io/gridmeter/api:local 0.0s done
+11:13:13 [DBG] #15 DONE 0.4s
+11:13:15 [INF] > "C:\Program Files\Docker\Docker\resources\bin\docker.exe" build --target pricemock --tag gridmeter/pricemock:local .
+11:13:17 [DBG] #0 building with "desktop-linux" instance using docker driver
+11:13:17 [DBG] 
+11:13:17 [DBG] #1 [internal] load build definition from Dockerfile
+11:13:17 [DBG] #1 transferring dockerfile: 1.03kB 0.0s done
+11:13:17 [DBG] #1 DONE 0.0s
+11:13:17 [DBG] 
+11:13:17 [DBG] #2 [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:10.0
+11:13:18 [DBG] #2 DONE 0.9s
+11:13:18 [DBG] 
+11:13:18 [DBG] #3 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0
+11:13:18 [DBG] #3 DONE 0.9s
+11:13:18 [DBG] 
+11:13:18 [DBG] #4 [internal] load .dockerignore
+11:13:18 [DBG] #4 transferring context: 98B 0.0s done
+11:13:18 [DBG] #4 DONE 0.0s
+11:13:18 [DBG] 
+11:13:18 [DBG] #5 [build 1/6] FROM mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d
+11:13:18 [DBG] #5 resolve mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d 0.1s done
+11:13:18 [DBG] #5 DONE 0.1s
+11:13:18 [DBG] 
+11:13:18 [DBG] #6 [pricemock 1/3] FROM mcr.microsoft.com/dotnet/aspnet:10.0@sha256:aac50ceef10391e78a899e3d2ccd00bbafa2dcb56ccf4586cbccf00edb84fc21
+11:13:18 [DBG] #6 resolve mcr.microsoft.com/dotnet/aspnet:10.0@sha256:aac50ceef10391e78a899e3d2ccd00bbafa2dcb56ccf4586cbccf00edb84fc21 0.0s done
+11:13:18 [DBG] #6 DONE 0.1s
+11:13:18 [DBG] 
+11:13:18 [DBG] #7 [internal] load build context
+11:13:18 [DBG] #7 transferring context: 5.59kB 0.0s done
+11:13:18 [DBG] #7 DONE 0.1s
+11:13:18 [DBG] 
+11:13:18 [DBG] #8 [build 3/6] COPY GridMeter.sln ./
+11:13:18 [DBG] #8 CACHED
+11:13:18 [DBG] 
+11:13:18 [DBG] #9 [build 4/6] COPY src/ src/
+11:13:18 [DBG] #9 CACHED
+11:13:18 [DBG] 
+11:13:18 [DBG] #10 [build 5/6] COPY tests/ tests/
+11:13:18 [DBG] #10 CACHED
+11:13:18 [DBG] 
+11:13:18 [DBG] #11 [build 6/6] RUN dotnet publish src/GridMeter.Api -c Release -o /out/api --nologo  && dotnet publish src/GridMeter.PriceMock -c Release -o /out/pricemock --nologo  && dotnet publish src/GridMeter.MeterParser.LocalRunner -c Release -o /out/parser --nologo
+11:13:18 [DBG] #11 CACHED
+11:13:18 [DBG] 
+11:13:18 [DBG] #12 [pricemock 2/3] WORKDIR /app
+11:13:18 [DBG] #12 CACHED
+11:13:18 [DBG] 
+11:13:18 [DBG] #13 [build 2/6] WORKDIR /src
+11:13:18 [DBG] #13 CACHED
+11:13:18 [DBG] 
+11:13:18 [DBG] #14 [pricemock 3/3] COPY --from=build /out/pricemock .
+11:13:18 [DBG] #14 CACHED
+11:13:18 [DBG] 
+11:13:18 [DBG] #15 exporting to image
+11:13:18 [DBG] #15 exporting layers done
+11:13:18 [DBG] #15 exporting manifest sha256:abe608ac86607a3067c2d09acdf72880a111e38dca1d2dbe549949b355b671f6 0.0s done
+11:13:18 [DBG] #15 exporting config sha256:6ee04bb795db578ddd1b303d2191ad1b30f18925a2bdb232b0e251d0036ef22b 0.0s done
+11:13:18 [DBG] #15 exporting attestation manifest sha256:3b8cb52efee6a<ACCOUNT_ID>d8c221fc789a65e4288b5abe00f999f37a99394 0.0s done
+11:13:18 [DBG] #15 exporting manifest list sha256:aa461fac51dd936c50bb9c12779e1750b346e96d246cf49e8f2827179793b8bb 0.0s done
+11:13:18 [DBG] #15 naming to docker.io/gridmeter/pricemock:local done
+11:13:18 [DBG] #15 unpacking to docker.io/gridmeter/pricemock:local 0.0s done
+11:13:18 [DBG] #15 DONE 0.2s
+11:13:19 [INF] > "C:\Program Files\Docker\Docker\resources\bin\docker.exe" build --target parser --tag gridmeter/parser:local .
+11:13:20 [DBG] #0 building with "desktop-linux" instance using docker driver
+11:13:20 [DBG] 
+11:13:20 [DBG] #1 [internal] load build definition from Dockerfile
+11:13:20 [DBG] #1 transferring dockerfile: 1.03kB 0.0s done
+11:13:20 [DBG] #1 DONE 0.0s
+11:13:20 [DBG] 
+11:13:20 [DBG] #2 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0
+11:13:20 [DBG] #2 DONE 0.1s
+11:13:20 [DBG] 
+11:13:20 [DBG] #3 [internal] load metadata for mcr.microsoft.com/dotnet/runtime:10.0
+11:13:21 [DBG] #3 DONE 0.2s
+11:13:21 [DBG] 
+11:13:21 [DBG] #4 [internal] load .dockerignore
+11:13:21 [DBG] #4 transferring context: 98B 0.0s done
+11:13:21 [DBG] #4 DONE 0.0s
+11:13:21 [DBG] 
+11:13:21 [DBG] #5 [internal] load build context
+11:13:21 [DBG] #5 DONE 0.0s
+11:13:21 [DBG] 
+11:13:21 [DBG] #6 [parser 1/3] FROM mcr.microsoft.com/dotnet/runtime:10.0@sha256:0a0e20d12b84b081fb737fddb92d8d205edce9ac2dc62796d2aab30f03804498
+11:13:21 [DBG] #6 resolve mcr.microsoft.com/dotnet/runtime:10.0@sha256:0a0e20d12b84b081fb737fddb92d8d205edce9ac2dc62796d2aab30f03804498 0.1s done
+11:13:21 [DBG] #6 DONE 0.1s
+11:13:21 [DBG] 
+11:13:21 [DBG] #7 [build 1/6] FROM mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d
+11:13:21 [DBG] #7 resolve mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d 0.1s done
+11:13:21 [DBG] #7 DONE 0.1s
+11:13:21 [DBG] 
+11:13:21 [DBG] #5 [internal] load build context
+11:13:21 [DBG] #5 transferring context: 5.59kB 0.0s done
+11:13:21 [DBG] #5 DONE 0.0s
+11:13:21 [DBG] 
+11:13:21 [DBG] #8 [build 3/6] COPY GridMeter.sln ./
+11:13:21 [DBG] #8 CACHED
+11:13:21 [DBG] 
+11:13:21 [DBG] #9 [build 4/6] COPY src/ src/
+11:13:21 [DBG] #9 CACHED
+11:13:21 [DBG] 
+11:13:21 [DBG] #10 [build 5/6] COPY tests/ tests/
+11:13:21 [DBG] #10 CACHED
+11:13:21 [DBG] 
+11:13:21 [DBG] #11 [build 2/6] WORKDIR /src
+11:13:21 [DBG] #11 CACHED
+11:13:21 [DBG] 
+11:13:21 [DBG] #12 [build 6/6] RUN dotnet publish src/GridMeter.Api -c Release -o /out/api --nologo  && dotnet publish src/GridMeter.PriceMock -c Release -o /out/pricemock --nologo  && dotnet publish src/GridMeter.MeterParser.LocalRunner -c Release -o /out/parser --nologo
+11:13:21 [DBG] #12 CACHED
+11:13:21 [DBG] 
+11:13:21 [DBG] #13 [parser 2/3] WORKDIR /app
+11:13:21 [DBG] #13 CACHED
+11:13:21 [DBG] 
+11:13:21 [DBG] #14 [parser 3/3] COPY --from=build /out/parser .
+11:13:21 [DBG] #14 CACHED
+11:13:21 [DBG] 
+11:13:21 [DBG] #15 exporting to image
+11:13:21 [DBG] #15 exporting layers done
+11:13:21 [DBG] #15 exporting manifest sha256:1e44b0fc086e230afb5f30c3234db57f96938136e2dfc5bda71f2d627cc255bf 0.0s done
+11:13:21 [DBG] #15 exporting config sha256:49e0e38da8cbae0a64e99cd6938b5d9ed55fddf2304ce1356baf10331b742975
+11:13:21 [DBG] #15 exporting config sha256:49e0e38da8cbae0a64e99cd6938b5d9ed55fddf2304ce1356baf10331b742975 0.0s done
+11:13:21 [DBG] #15 exporting attestation manifest sha256:07d07cffa6ce15e5e1d0ffd03164783b11bf41b065a7f00c5f5413008b27115b 0.0s done
+11:13:21 [DBG] #15 exporting manifest list sha256:ed4d1339b231b9a8d51c8bda5e5e502835a215f1b9f57fc762a68a3bdaf8ee1c 0.0s done
+11:13:21 [DBG] #15 naming to docker.io/gridmeter/parser:local done
+11:13:21 [DBG] #15 unpacking to docker.io/gridmeter/parser:local 0.0s done
+11:13:21 [DBG] #15 DONE 0.2s
+​
+╬════════════
+║ Publish
+╬═══
+​
+11:13:22 [INF] > "C:\Program Files\dotnet\dotnet.exe" publish C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Api --configuration Release --output C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\artifacts\api
+11:13:24 [DBG]   Determining projects to restore...
+11:13:25 [DBG]   All projects are up-to-date for restore.
+11:13:27 [DBG]   GridMeter.Domain -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Domain\bin\Release\net10.0\GridMeter.Domain.dll
+11:13:28 [DBG]   GridMeter.Application -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Application\bin\Release\net10.0\GridMeter.Application.dll
+11:13:30 [DBG]   GridMeter.Infrastructure -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Infrastructure\bin\Release\net10.0\GridMeter.Infrastructure.dll
+11:13:30 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:13:34 [DBG]   GridMeter.Api -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Api\bin\Release\net10.0\GridMeter.Api.dll
+11:13:34 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:13:35 [DBG]   GridMeter.Api -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\artifacts\api\
+11:13:35 [INF] > "C:\Program Files\dotnet\dotnet.exe" publish C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.PriceMock --configuration Release --output C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\artifacts\pricemock
+11:13:37 [DBG]   Determining projects to restore...
+11:13:38 [DBG]   All projects are up-to-date for restore.
+11:13:41 [DBG]   GridMeter.PriceMock -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.PriceMock\bin\Release\net10.0\GridMeter.PriceMock.dll
+11:13:41 [DBG]   GridMeter.PriceMock -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\artifacts\pricemock\
+11:13:41 [INF] > "C:\Program Files\dotnet\dotnet.exe" publish C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.MeterParser.Lambda --configuration Release --output C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\artifacts\parser-lambda
+11:13:43 [DBG]   Determining projects to restore...
+11:13:43 [DBG]   All projects are up-to-date for restore.
+11:13:45 [DBG]   GridMeter.MeterParser.Lambda -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.MeterParser.Lambda\bin\Release\net10.0\GridMeter.MeterParser.Lambda.dll
+11:13:45 [DBG]   GridMeter.MeterParser.Lambda -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\artifacts\parser-lambda\
+​
+╬══════════════════════
+║ Errors & Warnings
+╬═════════════
+​
+[WRN] : Exception was suppressed
+​
+═══════════════════════════════════════
+Target             Status      Duration
+───────────────────────────────────────
+Restore            Succeeded       0:04
+Compile            Succeeded       0:13
+GenerateClient     Succeeded       0:07
+DockerBuild        Succeeded       0:12
+Publish            Succeeded       0:23
+───────────────────────────────────────
+Total                              1:00
+═══════════════════════════════════════
+​
+Build succeeded on 26/11/2026 11:13:45. ＼（＾ᴗ＾）／

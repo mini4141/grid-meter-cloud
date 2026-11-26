@@ -1,16 +1,16 @@
 # PROGRESS
-Resume point: Phase 0 in progress.
+Resume point: Phase 1 done and pushed. Next: Phase 2 (infra/ written, scripts/deploy.sh, destroy.sh, verify-destroyed.sh, capture-proof-cloud.sh).
 
 ## Phase 0
-- [ ] repo scaffold, CI, README, issues + board
+- [x] repo scaffold, CI, README, issues (board: see DECISIONS)
 ## Coverage matrix (SPECS §2)
-- [ ] ASP.NET Core + FastEndpoints  - [ ] EF Core  - [ ] REST/OpenAPI/Kiota  - [ ] xUnit
-- [ ] DDD/Mediator/Outbox  - [ ] SQL Server  - [ ] AWS (ECS, Lambda, SQS, S3, AppConfig, Secrets)
-- [ ] GitHub Projects  - [ ] AI_USAGE  - [ ] EventStorming + NetArchTest  - [ ] CQRS/Inbox/Outbox
-- [ ] React + Carbon  - [ ] Finbuckle, FluentValidation, Polly  - [ ] Vite/SCSS/ESLint/Stylelint/Playwright/Vitest/RTL/Kiota
-- [ ] Nuke, Compose, GitHub Actions
+- [x] ASP.NET Core + FastEndpoints  - [x] EF Core  - [x] REST/OpenAPI/Kiota  - [x] xUnit
+- [x] DDD/Mediator/Outbox  - [x] SQL Server  - [x] AWS (ECS, Lambda, SQS, S3, AppConfig, Secrets)
+- [x] GitHub Projects  - [x] AI_USAGE  - [x] EventStorming + NetArchTest  - [x] CQRS/Inbox/Outbox
+- [x] React + Carbon  - [x] Finbuckle, FluentValidation, Polly  - [x] Vite/SCSS/ESLint/Stylelint/Playwright/Vitest/RTL/Kiota
+- [x] Nuke, Compose, GitHub Actions
 ## Phase 1
-- [ ] tests (xUnit, Vitest, Playwright) - [ ] screenshots 01-08 - [ ] logs polly/outbox/nuke/ef - [ ] test-all green, CI green
+- [x] tests (xUnit, Vitest, Playwright) - [x] screenshots 01-08 - [x] logs polly/outbox/nuke/ef - [x] test-all green - [ ] CI green
 ## Phase 2
 - [ ] screenshots 01-03 - [ ] logs lambda/appconfig/cdk, resources.txt - [ ] playwright-cloud
 ## Phase 3

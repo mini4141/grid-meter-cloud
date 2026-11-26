@@ -20,16 +20,25 @@ public sealed class IngestReadingBatchHandler(IAppDbContext db) : IRequestHandle
         db.InboxMessages.Add(new InboxMessage { MessageId = request.MessageId });
 
         var externalIds = request.Rows.Select(r => r.MeterId).Distinct().ToList();
-        var meters = await db.Meters.Where(m => externalIds.Contains(m.ExternalId))
-            .ToDictionaryAsync(m => m.ExternalId, m => m.Id, ct);
+        var meters = (await db.Meters.Where(m => externalIds.Contains(m.ExternalId)).Select(m => new { m.ExternalId, m.Id }).ToListAsync(ct))
+            .GroupBy(m => m.ExternalId).ToDictionary(g => g.Key, g => g.First().Id);
+
+        var rows = request.Rows
+            .Where(r => meters.ContainsKey(r.MeterId))
+            .Select(r => (MeterId: meters[r.MeterId], Start: DateTime.SpecifyKind(r.Timestamp, DateTimeKind.Utc), r.Kwh))
+            .ToList();
+        var meterIds = rows.Select(r => r.MeterId).Distinct().ToList();
+        var min = rows.Count > 0 ? rows.Min(r => r.Start) : DateTime.MinValue;
+        var max = rows.Count > 0 ? rows.Max(r => r.Start) : DateTime.MinValue;
+        var existing = (await db.Readings.Where(r => meterIds.Contains(r.MeterId) && r.IntervalStart >= min && r.IntervalStart <= max)
+            .Select(r => new { r.MeterId, r.IntervalStart }).ToListAsync(ct))
+            .Select(r => (r.MeterId, r.IntervalStart)).ToHashSet();
 
         var added = 0;
-        foreach (var row in request.Rows)
+        foreach (var row in rows)
         {
-            if (!meters.TryGetValue(row.MeterId, out var meterId)) continue;
-            var start = DateTime.SpecifyKind(row.Timestamp, DateTimeKind.Utc);
-            if (await db.Readings.AnyAsync(r => r.MeterId == meterId && r.IntervalStart == start, ct)) continue;
-            db.Readings.Add(new Reading(meterId, start, row.Kwh));
+            if (!existing.Add((row.MeterId, row.Start))) continue;
+            db.Readings.Add(new Reading(row.MeterId, row.Start, row.Kwh));
             added++;
         }
 

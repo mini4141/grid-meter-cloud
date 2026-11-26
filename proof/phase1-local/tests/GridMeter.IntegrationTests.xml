@@ -1,0 +1,46 @@
+<testsuites>
+  <testsuite name="GridMeter.IntegrationTests.dll" tests="5" skipped="0" failures="0" errors="0" time="5.163701800000001" timestamp="2026-11-26T04:05:58" hostname="DESKTOP-LSTSC86" id="0" package="GridMeter.IntegrationTests.dll">
+    <properties />
+    <testcase classname="GridMeter.IntegrationTests.UnitTest1" name="Test1" time="0.1701950" />
+    <testcase classname="GridMeter.IntegrationTests.IntegrationTests" name="Tenant_A_cannot_see_tenant_B_sites" time="1.7840630" />
+    <testcase classname="GridMeter.IntegrationTests.IntegrationTests" name="Demand_response_is_published_through_the_outbox" time="2.0093306" />
+    <testcase classname="GridMeter.IntegrationTests.IntegrationTests" name="Token_of_one_tenant_is_rejected_for_another" time="0.1135232" />
+    <testcase classname="GridMeter.IntegrationTests.IntegrationTests" name="Reprocessing_the_same_message_does_not_duplicate_readings" time="1.0865900" />
+    <system-out>
+Test Framework Informational Messages:
+[xUnit.net 00:00:00.01] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.15)
+[xUnit.net 00:00:00.63]   Discovering: GridMeter.IntegrationTests
+[xUnit.net 00:00:00.70]   Discovered:  GridMeter.IntegrationTests
+[xUnit.net 00:00:00.73]   Starting:    GridMeter.IntegrationTests
+[testcontainers.org 00:00:00.90] Connected to Docker:
+  Host: npipe://./pipe/docker_engine
+  Server Version: 29.7.2
+  Kernel Version: 6.18.33.2-microsoft-standard-WSL2
+  API Version: 1.55
+  Operating System: Docker Desktop
+  Total Memory: 15.62 GB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+[testcontainers.org 00:00:01.28] Docker container 734300f689fa created
+[testcontainers.org 00:00:01.47] Start Docker container 734300f689fa
+[testcontainers.org 00:00:01.80] Wait for Docker container 734300f689fa to complete readiness checks
+[testcontainers.org 00:00:02.90] Docker container 734300f689fa ready
+[testcontainers.org 00:00:03.03] Docker container da8dd8f66051 created
+[testcontainers.org 00:00:03.05] Start Docker container da8dd8f66051
+[testcontainers.org 00:00:03.36] Wait for Docker container da8dd8f66051 to complete readiness checks
+[testcontainers.org 00:00:03.39] Execute "/bin/sh -c find /opt/mssql-tools*/bin/sqlcmd -type f -print -quit" at Docker container da8dd8f66051
+[testcontainers.org 00:00:03.53] Execute "/opt/mssql-tools18/bin/sqlcmd -C -b -r 1 -d master -Q SELECT 1;" at Docker container da8dd8f66051
+[testcontainers.org 00:00:12.64] Execute "/opt/mssql-tools18/bin/sqlcmd -C -b -r 1 -d master -Q SELECT 1;" at Docker container da8dd8f66051
+[testcontainers.org 00:00:19.29] Execute "/opt/mssql-tools18/bin/sqlcmd -C -b -r 1 -d master -Q SELECT 1;" at Docker container da8dd8f66051
+[testcontainers.org 00:00:19.62] Docker container da8dd8f66051 ready
+{"@t":"2026-11-26T04:06:26.3414726Z","@m":"Registered 12 endpoints in \"1.163\" milliseconds.","@i":"e0e794ba","total":12,"time":"1.163","EventId":{"Id":1,"Name":"EndpointsRegistered"},"SourceContext":"FastEndpoints.StartupTimer"}
+{"@t":"2026-11-26T04:06:26.7842756Z","@m":"No validators found in the system!","@i":"3550a025","EventId":{"Id":1,"Name":"NoValidatorsFound"},"SourceContext":"FastEndpoints.Swagger.ValidationSchemaProcessor"}
+{"@t":"2026-11-26T04:06:26.9180794Z","@m":"Application started. Press Ctrl+C to shut down.","@i":"dcaefe54","SourceContext":"Microsoft.Hosting.Lifetime"}
+{"@t":"2026-11-26T04:06:26.9184416Z","@m":"Hosting environment: \"Development\"","@i":"bc5a1a4e","EnvName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}
+{"@t":"2026-11-26T04:06:26.9185217Z","@m":"Content root path: \"C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\7-grid-meter-cloud\\src\\GridMeter.Api\"","@i":"cc26f24e","ContentRoot":"C:\\Users\\ThinkPad\\Pictures\\mmvie-v2\\reqs\\7-grid-meter-cloud\\src\\GridMeter.Api","SourceContext":"Microsoft.Hosting.Lifetime"}
+{"@t":"2026-11-26T04:06:34.0004598Z","@m":"Application is shutting down...","@i":"90f52c38","SourceContext":"Microsoft.Hosting.Lifetime"}
+[testcontainers.org 00:00:31.45] Delete Docker container da8dd8f66051
+[xUnit.net 00:00:34.66]   Finished:    GridMeter.IntegrationTests
+</system-out>
+  </testsuite>
+</testsuites>

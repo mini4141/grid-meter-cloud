@@ -1,0 +1,363 @@
+== .NET: compile + unit + arch + integration ==
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1901: Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1902: Package 'System.Security.Cryptography.Pkcs' 9.0.6 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2fmv-rv2c-59x7
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Pkcs' 9.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-846f-f764-76mx
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-23rf-6693-g89p
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-6588-8gv4-xfgh
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7hqp-7c5m-4vq6
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8q5v-6pqq-x66h
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-c399-9853-6jmj
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cvvh-rhrc-wg4q
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8r8-53c2-pm3f
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-mmjf-rqrv-855v
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-r955-8q5j-3h83
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1901: Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1902: Package 'System.Security.Cryptography.Pkcs' 9.0.6 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2fmv-rv2c-59x7
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Pkcs' 9.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-846f-f764-76mx
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-23rf-6693-g89p
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-6588-8gv4-xfgh
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7hqp-7c5m-4vq6
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8q5v-6pqq-x66h
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-c399-9853-6jmj
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cvvh-rhrc-wg4q
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8r8-53c2-pm3f
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-mmjf-rqrv-855v
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-r955-8q5j-3h83
+C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\build\_build.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf
+​
+███╗   ██╗██╗   ██╗██╗  ██╗███████╗
+████╗  ██║██║   ██║██║ ██╔╝██╔════╝
+██╔██╗ ██║██║   ██║█████╔╝ █████╗  
+██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝  
+██║ ╚████║╚██████╔╝██║  ██╗███████╗
+╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+​
+NUKE Execution Engine version 10.1.0 (Windows,.NETCoreApp,Version=v10.0)
+​
+11:05:31 [WRN] Exception was suppressed
+Microsoft.Build.Exceptions.InvalidProjectFileException: The expression "[MSBuild]::GetTargetFrameworkIdentifier(net10.0)" cannot be evaluated. Could not load file or assembly 'NuGet.Frameworks, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. The located assembly's manifest definition does not match the assembly reference. (0x80131040)  C:\Program Files\dotnet\sdk\10.0.404\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets
+   at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IElementLocation elementLocation, String resourceName, Object[] args)
+   at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1,T2](IElementLocation elementLocation, String resourceName, T1 arg0, T2 arg1)
+   at Microsoft.Build.Evaluation.Expander`2.Function.Execute(Object objectInstance, IPropertyProvider`1 properties, ExpanderOptions options, IElementLocation elementLocation)
+   at Microsoft.Build.Evaluation.Expander`2.PropertyExpander.ExpandPropertyBody(String propertyBody, Object propertyValue, IPropertyProvider`1 properties, ExpanderOptions options, IElementLocation elementLocation, PropertiesUseTracker propertiesUseTracker, IFileSystem fileSystem)
+   at Microsoft.Build.Evaluation.Expander`2.PropertyExpander.ExpandPropertiesLeaveTypedAndEscaped(String expression, IPropertyProvider`1 properties, ExpanderOptions options, IElementLocation elementLocation, PropertiesUseTracker propertiesUseTracker, IFileSystem fileSystem)
+   at Microsoft.Build.Evaluation.Expander`2.ExpandIntoStringLeaveEscaped(String expression, ExpanderOptions options, IElementLocation elementLocation)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluatePropertyElement(ProjectPropertyElement propertyElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluatePropertyGroupElement(ProjectPropertyGroupElement propertyGroupElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+   at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+   at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ICollection`1 propertiesFromCommandLine, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory directoryCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, Boolean interactive)
+   at Microsoft.Build.Evaluation.Project.FromProjectRootElement(ProjectRootElement rootElement, ProjectOptions options)
+   at Nuke.Common.ProjectModel.ProjectModelTasks.ParseProject(String projectFile, String configuration, String targetFramework) in /_/source/Nuke.ProjectModel/ProjectModelTasks.cs:line 97
+   at Nuke.Common.Execution.Telemetry.CheckAwareness() in /_/source/Nuke.Build/Telemetry/Telemetry.cs:line 73
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+​
+╬════════════
+║ Restore
+╬═══
+​
+11:05:32 [INF] > "C:\Program Files\dotnet\dotnet.exe" restore C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\GridMeter.sln
+11:05:33 [DBG]   Determining projects to restore...
+11:05:34 [DBG]   All projects are up-to-date for restore.
+​
+╬════════════
+║ Compile
+╬═══
+​
+11:05:35 [INF] > "C:\Program Files\dotnet\dotnet.exe" build C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\GridMeter.sln --configuration Debug --no-restore
+11:05:36 [DBG]   GridMeter.Domain -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Domain\bin\Debug\net10.0\GridMeter.Domain.dll
+11:05:37 [DBG]   GridMeter.MeterParser.Lambda -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.MeterParser.Lambda\bin\Debug\net10.0\GridMeter.MeterParser.Lambda.dll
+11:05:38 [DBG]   GridMeter.Application -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Application\bin\Debug\net10.0\GridMeter.Application.dll
+11:05:38 [DBG]   GridMeter.PriceMock -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.PriceMock\bin\Debug\net10.0\GridMeter.PriceMock.dll
+11:05:38 [DBG]   GridMeter.MeterParser.LocalRunner -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.MeterParser.LocalRunner\bin\Debug\net10.0\GridMeter.MeterParser.LocalRunner.dll
+11:05:38 [DBG]   GridMeter.UnitTests -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.UnitTests\bin\Debug\net10.0\GridMeter.UnitTests.dll
+11:05:39 [DBG]   GridMeter.Infrastructure -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Infrastructure\bin\Debug\net10.0\GridMeter.Infrastructure.dll
+11:05:39 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:05:40 [DBG]   GridMeter.Api -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\src\GridMeter.Api\bin\Debug\net10.0\GridMeter.Api.dll
+11:05:40 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:05:41 [DBG]   GridMeter.IntegrationTests -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.IntegrationTests\bin\Debug\net10.0\GridMeter.IntegrationTests.dll
+11:05:41 [DBG]   GridMeter.ArchTests -> C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.ArchTests\bin\Debug\net10.0\GridMeter.ArchTests.dll
+11:05:41 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:05:41 [DBG]   As of November 10, 2026, with the release of .NET 11, Finbuckle.MultiTenant v11 and later require the Open Source Maintenance Fee for use in revenue-generating activities. Finbuckle.MultiTenant v10 does not, but if it is useful to you please consider sponsoring its development: https://github.com/sponsors/finbuckle
+11:05:41 [DBG] 
+11:05:41 [DBG] Build succeeded.
+11:05:41 [DBG]     0 Warning(s)
+11:05:41 [DBG]     0 Error(s)
+11:05:41 [DBG] 
+11:05:41 [DBG] Time Elapsed 00:00:05.97
+​
+╬═════════
+║ Test
+╬══
+​
+11:05:41 [INF] > "C:\Program Files\dotnet\dotnet.exe" test C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.UnitTests --configuration Debug --no-build --logger junit;LogFilePath=C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.UnitTests.xml --logger trx;LogFileName=GridMeter.UnitTests.trx --results-directory C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults
+11:05:43 [DBG] Test run for C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.UnitTests\bin\Debug\net10.0\GridMeter.UnitTests.dll (.NETCoreApp,Version=v10.0)
+11:05:44 [DBG] A total of 1 test files matched the specified pattern.
+11:05:50 [DBG] Results File: C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.UnitTests.xml
+11:05:50 [DBG] Results File: C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.UnitTests.trx
+11:05:50 [DBG] 
+11:05:50 [DBG] Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 3 s - GridMeter.UnitTests.dll (net10.0)
+11:05:51 [INF] > "C:\Program Files\dotnet\dotnet.exe" test C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.ArchTests --configuration Debug --no-build --logger junit;LogFilePath=C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.ArchTests.xml --logger trx;LogFileName=GridMeter.ArchTests.trx --results-directory C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults
+11:05:52 [DBG] Test run for C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.ArchTests\bin\Debug\net10.0\GridMeter.ArchTests.dll (.NETCoreApp,Version=v10.0)
+11:05:53 [DBG] A total of 1 test files matched the specified pattern.
+11:05:56 [DBG] Results File: C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.ArchTests.xml
+11:05:56 [DBG] Results File: C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.ArchTests.trx
+11:05:56 [DBG] 
+11:05:56 [DBG] Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 1 s - GridMeter.ArchTests.dll (net10.0)
+11:05:57 [INF] > "C:\Program Files\dotnet\dotnet.exe" test C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.IntegrationTests --configuration Debug --no-build --logger junit;LogFilePath=C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.IntegrationTests.xml --logger trx;LogFileName=GridMeter.IntegrationTests.trx --results-directory C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults
+11:05:58 [DBG] Test run for C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\tests\GridMeter.IntegrationTests\bin\Debug\net10.0\GridMeter.IntegrationTests.dll (.NETCoreApp,Version=v10.0)
+11:05:58 [DBG] A total of 1 test files matched the specified pattern.
+11:06:35 [DBG] Results File: C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.IntegrationTests.xml
+11:06:35 [DBG] Results File: C:\Users\ThinkPad\Pictures\mmvie-v2\reqs\7-grid-meter-cloud\TestResults\GridMeter.IntegrationTests.trx
+11:06:35 [DBG] 
+11:06:35 [DBG] Passed!  - Failed:     0, Passed:     5, Skipped:     0, Total:     5, Duration: 32 s - GridMeter.IntegrationTests.dll (net10.0)
+​
+╬══════════════════════
+║ Errors & Warnings
+╬═════════════
+​
+[WRN] : Exception was suppressed
+​
+═══════════════════════════════════════
+Target             Status      Duration
+───────────────────────────────────────
+Restore            Succeeded       0:02
+Compile            Succeeded       0:06
+Test               Succeeded       0:54
+───────────────────────────────────────
+Total                              1:03
+═══════════════════════════════════════
+​
+Build succeeded on 26/11/2026 11:06:35. ＼（＾ᴗ＾）／
+== web: lint, stylelint, build, vitest ==
+✓ Lockfile passes supply-chain policies (verified 20m ago)
+Lockfile is up to date, resolution step is skipped
+Done in 198ms using pnpm v12.3.4
+$ eslint src e2e --max-warnings 0
+$ stylelint "src/**/*.scss"
+$ tsc --noEmit && vite build
+vite v8.3.8 building client environment for production...
+transforming...
+WARNING: mixed-decls deprecation is obsolete. If you were previously silencing it, your code may now behave in unexpected ways.
+
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin3.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin3.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Pi.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Pi.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Cyrillic.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Cyrillic.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+
+~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin2.woff2 referenced in ~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin2.woff2 didn't resolve at build time, it will remain unchanged to be resolved at runtime
+✓ 1150 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.40 kB │ gzip:   0.27 kB
+dist/assets/index-DRhDzF9z.css  1,447.71 kB │ gzip: 133.80 kB
+dist/assets/index-BQfwTp8L.js     976.49 kB │ gzip: 290.61 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 25.89s
+[PLUGIN_TIMINGS] JavaScript callbacks ran for 25.0s of this 25.9s build (97%).
+The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - plugin vite:css transform (95%, 24.5s, 2 calls)
+Additional callback time came from callbacks under 1s.
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+
+JUNIT report written to C:/Users/ThinkPad/Pictures/mmvie-v2/reqs/7-grid-meter-cloud/proof/phase1-local/tests/vitest.xml
+== web: playwright e2e ==
+
+Running 1 test using 1 worker
+
+  ok 1 e2e\flow.spec.ts:34:1 › upload a meter file and see consumption, estimate and demand response (25.3s)
+
+  1 passed (28.3s)
+ALL TESTS PASSED

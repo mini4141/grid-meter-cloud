@@ -1,0 +1,11 @@
+Warning: KiotaBuilder OpenAPI warning: #/paths/~1api~1sites~1{id}~1consumption/get/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/paths/~1api~1sites~1{id}~1estimate/get/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/paths/~1api~1sites~1{id}~1demand-response/post/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/paths/~1api~1sites~1{id}~1demand-response/get/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/paths/~1api~1sites~1{id}/get/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/paths/~1api~1sites~1{id}~1meters/post/parameters/0/schema - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/DemandResponseIssuedDto/properties/eventId - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/DemandResponseDto/properties/id - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/SiteDto/properties/id - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/SiteDetailDto/properties/id - The format guid is not supported by Kiota for the type String and will be ignored.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/MeterDto/properties/id - The format guid is not supported by Kiota for the type String and will be ignored.

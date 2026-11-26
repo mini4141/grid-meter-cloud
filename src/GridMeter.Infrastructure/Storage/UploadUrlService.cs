@@ -9,10 +9,12 @@ public sealed class UploadUrlService : IUploadUrlService
 {
     private readonly Lazy<AmazonS3Client> _s3;
     private readonly string _bucket;
+    private readonly Amazon.S3.Protocol _protocol;
 
     public UploadUrlService(IConfiguration config)
     {
         _bucket = config["Storage:UploadsBucket"] ?? "gridmeter-uploads";
+        _protocol = (config["Storage:PublicServiceUrl"] ?? "").StartsWith("http://") ? Amazon.S3.Protocol.HTTP : Amazon.S3.Protocol.HTTPS;
         var publicUrl = config["Storage:PublicServiceUrl"];
         var s3Config = new AmazonS3Config { ForcePathStyle = true };
         if (!string.IsNullOrEmpty(publicUrl))
@@ -36,6 +38,7 @@ public sealed class UploadUrlService : IUploadUrlService
             BucketName = _bucket,
             Key = key,
             Verb = HttpVerb.PUT,
+            Protocol = _protocol,
             Expires = DateTime.UtcNow.AddMinutes(10),
             ContentType = "text/csv"
         });

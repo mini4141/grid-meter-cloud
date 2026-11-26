@@ -26,8 +26,13 @@ public static class DependencyInjection
         services.AddSingleton<IUploadUrlService, UploadUrlService>();
         services.AddPriceClient(config["PriceApi:BaseUrl"] ?? "http://localhost:5100");
 
-        services.AddAWSService<IAmazonSQS>();
-        services.AddAWSService<IAmazonS3>();
+        services.AddSingleton<IAmazonSQS>(_ =>
+        {
+            var sqsConfig = new AmazonSQSConfig();
+            if (config.GetValue<bool>("Messaging:AutoCreateQueues")) sqsConfig.HttpClientFactory = new LocalHttpClientFactory();
+            return new AmazonSQSClient(sqsConfig);
+        });
+        services.AddSingleton<IAmazonS3>(_ => new AmazonS3Client(new AmazonS3Config { ForcePathStyle = true }));
         services.AddSingleton<QueueResolver>();
 
         if (config.GetValue("Messaging:Enabled", true))
@@ -49,7 +54,8 @@ public static class DependencyInjection
 
         var s3 = sp.GetRequiredService<IAmazonS3>();
         var bucket = config["Storage:UploadsBucket"] ?? "gridmeter-uploads";
-        await s3.PutBucketAsync(new PutBucketRequest { BucketName = bucket });
+        try { await s3.PutBucketAsync(new PutBucketRequest { BucketName = bucket }); }
+        catch (BucketAlreadyOwnedByYouException) { /* created by the parser runner */ }
         await s3.PutCORSConfigurationAsync(new PutCORSConfigurationRequest
         {
             BucketName = bucket,

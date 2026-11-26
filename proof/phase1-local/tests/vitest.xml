@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="4" failures="0" errors="0" time="0.8034273">
+    <testsuite name="src/pages/pages.test.tsx" timestamp="2026-11-26T04:08:11.783Z" hostname="DESKTOP-LSTSC86" tests="4" failures="0" errors="0" skipped="0" time="0.8034273">
+        <testcase classname="src/pages/pages.test.tsx" name="pages &gt; SitesPage renders the sites in a Carbon DataTable" time="0.6355218">
+            <system-out>
+[@carbon/feature-flags] `enable-focus-wrap-without-sentinels` is available but not enabled.
+Enable the new focus wrap behavior that doesn&apos;t use sentinel nodes
+This becomes the default behavior in v12. Enable it to migrate early, or enable `enable-v12-release` to turn on every v12 flag at once.
+[@carbon/feature-flags] `enable-v12-autoalign` is available but not enabled.
+Enable autoAlign by default for components that support it, like Popover, Tooltip, Toggletip, Dropdown, etc.
+This becomes the default behavior in v12. Enable it to migrate early, or enable `enable-v12-release` to turn on every v12 flag at once.
+[@carbon/feature-flags] `enable-v12-dynamic-floating-styles` is available but not enabled.
+Enable dynamic setting of floating styles for components like Popover, Tooltip, etc.
+This becomes the default behavior in v12. Enable it to migrate early, or enable `enable-v12-release` to turn on every v12 flag at once.
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/pages/pages.test.tsx" name="pages &gt; SitePage shows the consumption chart and the estimate when the flag is on" time="0.094464">
+        </testcase>
+        <testcase classname="src/pages/pages.test.tsx" name="pages &gt; AdminPage shows build info and the flag state" time="0.03257">
+        </testcase>
+        <testcase classname="src/pages/pages.test.tsx" name="pages &gt; LoginPage lists the tenants" time="0.0354254">
+        </testcase>
+    </testsuite>
+</testsuites>

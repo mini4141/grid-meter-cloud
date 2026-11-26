@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="28.316136000000004">
+<testsuite name="flow.spec.ts" timestamp="2026-11-26T04:08:27.627Z" hostname="" tests="1" failures="0" skipped="0" time="25.269" errors="0">
+<testcase name="upload a meter file and see consumption, estimate and demand response" classname="flow.spec.ts" time="25.269">
+</testcase>
+</testsuite>
+</testsuites>

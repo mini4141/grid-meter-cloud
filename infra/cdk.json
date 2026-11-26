@@ -1,0 +1,6 @@
+{
+  "app": "dotnet run --project GridMeter.Infra/GridMeter.Infra.csproj",
+  "context": {
+    "@aws-cdk/core:bootstrapQualifier": "gridmtr"
+  }
+}

@@ -1,0 +1,19 @@
+<testsuites>
+  <testsuite name="GridMeter.UnitTests.dll" tests="6" skipped="0" failures="0" errors="0" time="5.1885342" timestamp="2026-11-26T04:05:44" hostname="DESKTOP-LSTSC86" id="0" package="GridMeter.UnitTests.dll">
+    <properties />
+    <testcase classname="GridMeter.UnitTests.UnitTest1" name="Test1" time="0.0064041" />
+    <testcase classname="GridMeter.UnitTests.DemandResponseTests" name="Issuing_raises_a_domain_event" time="0.9130254" />
+    <testcase classname="GridMeter.UnitTests.MeterFileParserTests" name="Parses_valid_rows_and_rejects_bad_ones" time="0.9134639" />
+    <testcase classname="GridMeter.UnitTests.MeterFileParserTests" name="Batches_rows_in_chunks_of_100" time="0.0134850" />
+    <testcase classname="GridMeter.UnitTests.CreateSiteTests" name="Handler_persists_a_site" time="3.0832041" />
+    <testcase classname="GridMeter.UnitTests.CreateSiteTests" name="Validator_rejects_an_empty_name" time="0.2589517" />
+    <system-out>
+Test Framework Informational Messages:
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.15)
+[xUnit.net 00:00:01.12]   Discovering: GridMeter.UnitTests
+[xUnit.net 00:00:01.21]   Discovered:  GridMeter.UnitTests
+[xUnit.net 00:00:01.26]   Starting:    GridMeter.UnitTests
+[xUnit.net 00:00:04.68]   Finished:    GridMeter.UnitTests
+</system-out>
+  </testsuite>
+</testsuites>

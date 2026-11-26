@@ -7,7 +7,7 @@ using GridMeter.MeterParser.Lambda;
 
 var bucket = Environment.GetEnvironmentVariable("UPLOADS_BUCKET") ?? "gridmeter-uploads";
 var queue = Environment.GetEnvironmentVariable("READINGS_QUEUE_NAME") ?? "gridmeter-readings";
-var s3 = new AmazonS3Client();
+var s3 = new AmazonS3Client(new AmazonS3Config { ForcePathStyle = true });
 var sqs = new AmazonSQSClient();
 var function = new Function(s3, sqs, queue);
 var seen = new HashSet<string>();

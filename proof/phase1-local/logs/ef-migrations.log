@@ -1,0 +1,4 @@
+{"@t":"2026-11-26T03:53:09.7020213Z","@m":"Database migrations applied","@i":"5e3468fd"}
+An error occurred while accessing the database. Continuing without the information provided by the database. Error: Login failed for user 'sa'.
+<ACCOUNT_ID>57_Initial
+Pending status not shown. Unable to determine which migrations have been applied. This can happen when your project uses a version of Entity Framework Core lower than 5.0.0 or when an error occurs while accessing the database.

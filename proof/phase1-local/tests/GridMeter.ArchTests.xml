@@ -1,0 +1,17 @@
+<testsuites>
+  <testsuite name="GridMeter.ArchTests.dll" tests="4" skipped="0" failures="0" errors="0" time="1.0879448999999999" timestamp="2026-11-26T04:05:53" hostname="DESKTOP-LSTSC86" id="0" package="GridMeter.ArchTests.dll">
+    <properties />
+    <testcase classname="GridMeter.ArchTests.UnitTest1" name="Test1" time="0.0043863" />
+    <testcase classname="GridMeter.ArchTests.ArchitectureTests" name="Infrastructure_does_not_depend_on_Api" time="1.0554695" />
+    <testcase classname="GridMeter.ArchTests.ArchitectureTests" name="Domain_depends_on_nothing_else_in_the_solution" time="0.0058938" />
+    <testcase classname="GridMeter.ArchTests.ArchitectureTests" name="Application_depends_only_on_Domain" time="0.0221953" />
+    <system-out>
+Test Framework Informational Messages:
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.15)
+[xUnit.net 00:00:00.55]   Discovering: GridMeter.ArchTests
+[xUnit.net 00:00:00.60]   Discovered:  GridMeter.ArchTests
+[xUnit.net 00:00:00.64]   Starting:    GridMeter.ArchTests
+[xUnit.net 00:00:01.78]   Finished:    GridMeter.ArchTests
+</system-out>
+  </testsuite>
+</testsuites>

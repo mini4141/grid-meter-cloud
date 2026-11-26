@@ -1,0 +1,13 @@
+{"@t":"2026-11-26T03:33:27.4510169Z","@m":"LocalRunner watching s3://gridmeter-uploads/uploads/","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:39:57.9157072Z","@m":"Parsed 2880 rows (0 rejected) for tenant aurora-power","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:39:58.1031870Z","@m":"Sent 29 SQS messages to gridmeter-readings","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:39:58.1038436Z","@m":"Parsed uploads/aurora-power/52b246bd2762481793c3faaebccccdbf/readings-2026-11.csv: 29 messages sent","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:50:13.1891358Z","@m":"Parsed 2880 rows (0 rejected) for tenant aurora-power","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:50:13.2598820Z","@m":"Sent 29 SQS messages to gridmeter-readings","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:50:13.2599716Z","@m":"Parsed uploads/aurora-power/f65bf73911cd479b8ba4f7fadc935940/readings-2026-11.csv: 29 messages sent","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:53:35.3251694Z","@m":"Parsed 2880 rows (0 rejected) for tenant aurora-power","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:53:35.4100159Z","@m":"Sent 29 SQS messages to gridmeter-readings","app":"parser-local-runner"}
+{"@t":"2026-11-26T03:53:35.4100956Z","@m":"Parsed uploads/aurora-power/7dde57a23c7d4cd3b5f9548262597ebe/readings-2026-11.csv: 29 messages sent","app":"parser-local-runner"}
+{"@t":"2026-11-26T04:08:35.0191868Z","@m":"Parsed 2880 rows (0 rejected) for tenant aurora-power","app":"parser-local-runner"}
+{"@t":"2026-11-26T04:08:35.4416119Z","@m":"Sent 29 SQS messages to gridmeter-readings","app":"parser-local-runner"}
+{"@t":"2026-11-26T04:08:35.4441894Z","@m":"Parsed uploads/aurora-power/090ef94c04c64937a027a4007edec8c7/readings-2026-11.csv: 29 messages sent","app":"parser-local-runner"}
