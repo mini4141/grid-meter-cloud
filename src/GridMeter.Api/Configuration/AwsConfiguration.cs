@@ -21,7 +21,7 @@ public static class AwsConfiguration
             {
                 var json = JsonDocument.Parse(Get(sm, dbSecret)).RootElement;
                 config["ConnectionStrings:Default"] =
-                    $"Server={json.GetProperty("host").GetString()},{json.GetProperty("port").GetInt32()};Database=GridMeter;" +
+                    $"Server={json.GetProperty("host").GetString()},{json.GetProperty("port")};Database=GridMeter;" +
                     $"User Id={json.GetProperty("username").GetString()};Password={json.GetProperty("password").GetString()};TrustServerCertificate=True";
             }
             if (!string.IsNullOrEmpty(jwtSecret)) config["Jwt:Key"] = Get(sm, jwtSecret);
