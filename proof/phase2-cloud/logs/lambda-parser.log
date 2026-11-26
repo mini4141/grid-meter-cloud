@@ -1,0 +1,13 @@
+START RequestId: 67c532a9-fed6-4068-9ea7-d8d30efa1070 Version: $LATEST
+	2026-11-26T06:00:07.646Z	67c532a9-fed6-4068-9ea7-d8d30efa1070	info	Parsed 2880 rows (0 rejected) for tenant aurora-power
+	2026-11-26T06:00:07.870Z	67c532a9-fed6-4068-9ea7-d8d30efa1070	info	Sent 29 SQS messages to gridmeter-readings
+	2026-11-26T06:00:07.870Z	67c532a9-fed6-4068-9ea7-d8d30efa1070	info	Parsed s3://gridmeter-uploads4f6eb0fd-eg9gathwdeef/uploads/aurora-power/2c3023cf4e5b4ac08abc5de77f25fa1e/readings-2026-11.csv: 29 messages sent
+	END RequestId: 67c532a9-fed6-4068-9ea7-d8d30efa1070
+	REPORT RequestId: 67c532a9-fed6-4068-9ea7-d8d30efa1070	Duration: 329.43 ms	Billed Duration: 330 ms	Memory Size: 512 MB	Max Memory Used: 114 MB	
+	START RequestId: 64587114-2e37-4272-85a2-5e8af40bfa64 Version: $LATEST
+	2026-11-26T06:03:38.368Z	64587114-2e37-4272-85a2-5e8af40bfa64	info	Parsed 2880 rows (0 rejected) for tenant aurora-power
+	2026-11-26T06:03:38.545Z	64587114-2e37-4272-85a2-5e8af40bfa64	info	Sent 29 SQS messages to gridmeter-readings
+	2026-11-26T06:03:38.545Z	64587114-2e37-4272-85a2-5e8af40bfa64	info	Parsed s3://gridmeter-uploads4f6eb0fd-eg9gathwdeef/uploads/aurora-power/fb05094e627449e4bf5d4c7daa3da1ff/readings-2026-11.csv: 29 messages sent
+	END RequestId: 64587114-2e37-4272-85a2-5e8af40bfa64
+	REPORT RequestId: 64587114-2e37-4272-85a2-5e8af40bfa64	Duration: 367.10 ms	Billed Duration: 368 ms	Memory Size: 512 MB	Max Memory Used: 115 MB	
+

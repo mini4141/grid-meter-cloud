@@ -1,0 +1,8 @@
+AI agent detected
+[Warning] Template validation found issues in your templates (reported as warnings).
+Set feature flag "@aws-cdk/core:validateAgainstDefaultRules" to true to turn these into errors.
+ ⏳  Bootstrapping environment aws://<ACCOUNT_ID>/ap-southeast-2...
+Trusted accounts for deployment: (none)
+Trusted accounts for lookup: (none)
+Using default execution policy of 'arn:aws:iam::aws:policy/AdministratorAccess'. Pass '--cloudformation-execution-policies' to customize.
+✅  Environment aws://<ACCOUNT_ID>/ap-southeast-2 bootstrapped (no changes).

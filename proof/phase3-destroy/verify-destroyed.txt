@@ -1,0 +1,23 @@
+verify-destroyed: 2026-11-26T06:27:52Z  profile=grid-meter-cloud-deployer region=ap-southeast-2
+--- direct checks (SPECS section 11) ---
+OK    RDS instances: none
+OK    ECS clusters (gridmeter): none
+OK    Lambda functions (GridMeter): none
+OK    SQS queues (gridmeter): none
+OK    AppConfig applications: none
+OK    Secrets Manager secrets (tagged, incl. pending deletion): none
+OK    Load balancers (GridM): none
+OK    NAT gateways (available/pending): none
+OK    Elastic IPs: none
+OK    VPCs tagged Project: none
+OK    S3 buckets (gridmeter-*, cdk-gridmtr-*): none
+OK    ECR repositories (cdk-gridmtr-*): none
+OK    CloudFront distributions (tagged): none
+OK    CloudFormation stacks: none
+OK    CloudWatch log groups (GridMeter): none
+OK    IAM roles (cdk-gridmtr-*, GridMeter-*): none
+--- tagging API cross-check ---
+NOTE  the deployer profile is not allowed to call tag:GetResources (explicit deny), so the tagging API cross-check was skipped; the direct describe/list checks above are the source of truth.
+OK    ECS clusters in any state (GridMeter): none
+
+RESULT: nothing billable left

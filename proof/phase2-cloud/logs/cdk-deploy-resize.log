@@ -1,0 +1,372 @@
+AI agent detected
+[Warning] Template validation found issues in your templates (reported as warnings).
+Set feature flag "@aws-cdk/core:validateAgainstDefaultRules" to true to turn these into errors.
+WARNING EngineVersion: '16.00' is not one of ['11.00.2100.60.v1', '11.00.5058.0.v1', '11.00.6020.0.v1', '11.00.6594.0.v1', '11.00.7462.6.v1', '11.00.7493.4.v1', '12.00.4422.0.v1', '12.00.5000.0.v1', '12.00.5546.0.v1', '12.00.5571.0.v1', '12.00.6293.0.v1', '12.00.6329.1.v1', '12.00.6433.1.v1', '12.00.6439.10.v1', '12.00.6444.4.v1', '12.00.6449.1.v1', '13.00.2164.0.v1', '13.00.4422.0.v1', '13.00.4451.0.v1', '13.00.4466.4.v1', '13.00.4522.0.v1', '13.00.5216.0.v1', '13.00.5292.0.v1', '13.00.5366.0.v1', '13.00.5426.0.v1', '13.00.5598.27.v1', '13.00.5820.21.v1', '13.00.5850.14.v1', '13.00.5882.1.v1', '13.00.6300.2.v1', '13.00.6419.1.v1', '13.00.6430.49.v1', '13.00.6435.1.v1', '13.00.6441.1.v1', '13.00.6445.1.v1', '13.00.6450.1.v1', '13.00.6455.2.v1', '13.00.6460.7.v1', '13.00.6465.1.v1', '13.00.6470.1.v1', '13.00.6475.1.v1', '13.00.6480.4.v1', '13.00.6485.1.v1', '13.00.6490.1.v1', '13.00.6500.1.v1', '14.00.1000.169.v1', '14.00.3015.40.v1', '14.00.3035.2.v1', '14.00.3049.1.v1', '14.00.3192.2.v1', '14.00.3223.3.v1', '14.00.3281.6.v1', '14.00.3294.2.v1', '14.00.3356.20.v1', '14.00.3381.3.v1', '14.00.3401.7.v1', '14.00.3421.10.v1', '14.00.3451.2.v1', '14.00.3460.9.v1', '14.00.3465.1.v1', '14.00.3471.2.v1', '14.00.3475.1.v1', '14.00.3480.1.v1', '14.00.3485.1.v1', '14.00.3495.9.v1', '14.00.3500.1.v1', '14.00.3505.1.v1', '14.00.3515.1.v1', '14.00.3520.4.v1', '14.00.3525.1.v1', '14.00.3530.2.v1', '14.00.3540.1.v1', '14.00.3550.4.v1', '14.00.3560.2.v1', '15.00.4043.16.v1', '15.00.4073.23.v1', '15.00.4153.1.v1', '15.00.4198.2.v1', '15.00.4236.7.v1', '15.00.4312.2.v1', '15.00.4316.3.v1', '15.00.4322.2.v1', '15.00.4335.1.v1', '15.00.4345.5.v1', '15.00.4355.3.v1', '15.00.4365.2.v1', '15.00.4375.4.v1', '15.00.4382.1.v1', '15.00.4385.2.v1', '15.00.4390.2.v1', '15.00.4395.2.v1', '15.00.4410.1.v1', '15.00.4415.2.v1', '15.00.4420.2.v1', '15.00.4430.1.v1', '15.00.4435.7.v1', '15.00.4440.1.v1', '15.00.4445.1.v1', '15.00.4455.2.v1', '15.00.4460.4.v1', '15.00.4465.1.v1', '15.00.4470.1.v1', '15.00.4480.2.v1', '15.00.4490.9.v1', '15.00.4500.2.v1', '16.00.4085.2.v1', '16.00.4095.4.v1', '16.00.4105.2.v1', '16.00.4115.5.v1', '16.00.4120.1.v1', '16.00.4125.3.v1', '16.00.4131.2.v1', '16.00.4135.4.v1', '16.00.4140.3.v1', '16.00.4150.1.v1', '16.00.4165.4.v1', '16.00.4175.1.v1', '16.00.4185.3.v1', '16.00.4195.2.v1', '16.00.4205.1.v1', '16.00.4210.1.v1', '16.00.4215.2.v1', '16.00.4225.2.v1', '16.00.4230.2.v1', '16.00.4236.2.v1', '16.00.4245.2.v1', '16.00.4250.1.v1', '16.00.4255.1.v1', '16.00.4265.3.v1', '16.00.4295.3.v1', '16.00.4305.5.v1', '17.00.4045.5.v1', '17.00.4055.5.v1', '17.00.4065.4.v1', '17.00.4075.5.v1', '17.00.5005.3.v1', '17.00.5035.5.v1'] (CloudFormation Validate)
+   GridMeter/Db/Resource (Db5D02A0A9) aws-cdk-lib.aws_rds.CfnDBInstance
+   Acknowledge with 'CloudFormation-Validate::E9006'
+
+WARNING StorageEncrypted: RDS instance should have StorageEncrypted set to true (CloudFormation Validate)
+   GridMeter/Db/Resource (Db5D02A0A9) aws-cdk-lib.aws_rds.CfnDBInstance
+   Suggested fix: Set StorageEncrypted to true
+   Acknowledge with 'CloudFormation-Validate::W9008'
+
+..\..\..\..\..\AppData\Local\Temp\mtrvnnj5.0dv\lib\program.js:1:64029
+WARNING Enable the 'circuitBreaker' property to trigger a quicker deployment failure if tasks are failing to start up (without this setting deployments may take up to 3 hours to fail). (Construct Annotations)
+   GridMeter/Api/Service
+   Acknowledge with 'Annotation::@aws-cdk/aws-ecs:shouldUseCircuitBreaker'
+
+..\..\..\..\..\AppData\Local\Temp\mtrvnnj5.0dv\lib\program.js:1:64029
+WARNING minHealthyPercent has not been configured so the default value of 50% is used. The number of running tasks will decrease below the desired count during deployments etc. See https://github.com/aws/aws-cdk/issues/31705 (Construct Annotations)
+   GridMeter/Api/Service
+   Acknowledge with 'Annotation::@aws-cdk/aws-ecs:minHealthyPercent'
+
+✨  Synthesis time: 67.44s
+
+GridMeter: start: Building GridMeter Template
+GridMeter: success: Built GridMeter Template
+GridMeter: start: Building ApiImage
+GridMeter: start: Publishing GridMeter Template (<ACCOUNT_ID>-ap-southeast-2-743ad860)
+GridMeter: success: Published GridMeter Template (<ACCOUNT_ID>-ap-southeast-2-743ad860)
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.03kB 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:10.0
+#2 DONE 0.3s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0
+#3 DONE 0.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 98B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [build 1/6] FROM mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d
+#6 resolve mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d 0.0s done
+#6 DONE 0.0s
+
+#7 [api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:10.0@sha256:aac50ceef10391e78a899e3d2ccd00bbafa2dcb56ccf4586cbccf00edb84fc21
+#7 resolve mcr.microsoft.com/dotnet/aspnet:10.0@sha256:aac50ceef10391e78a899e3d2ccd00bbafa2dcb56ccf4586cbccf00edb84fc21 0.0s done
+#7 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 123.95kB 0.1s done
+#5 DONE 0.2s
+
+#8 [build 2/6] WORKDIR /src
+#8 CACHED
+
+#9 [build 3/6] COPY GridMeter.sln ./
+#9 CACHED
+
+#10 [build 6/6] RUN dotnet publish src/GridMeter.Api -c Release -o /out/api --nologo  && dotnet publish src/GridMeter.PriceMock -c Release -o /out/pricemock --nologo  && dotnet publish src/GridMeter.MeterParser.LocalRunner -c Release -o /out/parser --nologo
+#10 CACHED
+
+#11 [build 5/6] COPY tests/ tests/
+#11 CACHED
+
+#12 [build 4/6] COPY src/ src/
+#12 CACHED
+
+#13 [api 2/3] WORKDIR /app
+#13 CACHED
+
+#14 [api 3/3] COPY --from=build /out/api .
+#14 CACHED
+
+#15 exporting to image
+#15 exporting layers done
+#15 exporting manifest sha256:0a278c6c5849ea5c098ad4fffbba1b28a294c9945ab193c9df211216d949284c done
+#15 exporting config sha256:3681c03b81c61fab23fd3f435ef0da941b9f0dd505bce4f3c6516bedf6baf327 done
+#15 naming to docker.io/library/cdkasset-f04ae1f994c74e5a910f4473a821fa1492071c173e916438ee075440a027148d:latest done
+#15 unpacking to docker.io/library/cdkasset-f04ae1f994c74e5a910f4473a821fa1492071c173e916438ee075440a027148d:latest 0.0s done
+#15 DONE 0.1s
+GridMeter: success: Built ApiImage
+GridMeter: start: Publishing ApiImage (<ACCOUNT_ID>-ap-southeast-2-faa22668)
+GridMeter: start: Building PriceImage
+The push refers to repository [<ACCOUNT_ID>.dkr.ecr.ap-southeast-2.amazonaws.com/cdk-gridmtr-container-assets-<ACCOUNT_ID>-ap-southeast-2]
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+21e39e10606f: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+bbb89ae32e02: Waiting
+21e39e10606f: Waiting
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.03kB 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0
+#2 DONE 0.1s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:10.0
+272c58efda97: Waiting
+8a289e1ea591: Waiting
+5b0eacacd99f: Waiting
+ab6d68e46bc0: Waiting
+590be7a8d3a7: Layer already exists
+245c91b0e5fd: Waiting
+bbb89ae32e02: Layer already exists
+21e39e10606f: Layer already exists
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 98B 0.0s done
+ab6d68e46bc0: Waiting
+245c91b0e5fd: Layer already exists
+272c58efda97: Waiting
+8a289e1ea591: Waiting
+5b0eacacd99f: Waiting
+#4 DONE 0.1s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [pricemock 1/3] FROM mcr.microsoft.com/dotnet/aspnet:10.0@sha256:aac50ceef10391e78a899e3d2ccd00bbafa2dcb56ccf4586cbccf00edb84fc21
+#6 resolve mcr.microsoft.com/dotnet/aspnet:10.0@sha256:aac50ceef10391e78a899e3d2ccd00bbafa2dcb56ccf4586cbccf00edb84fc21 0.1s done
+272c58efda97: Waiting
+8a289e1ea591: Waiting
+5b0eacacd99f: Waiting
+ab6d68e46bc0: Waiting
+272c58efda97: Waiting
+8a289e1ea591: Waiting
+5b0eacacd99f: Waiting
+ab6d68e46bc0: Waiting
+#6 DONE 0.1s
+
+#7 [build 1/6] FROM mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d
+#7 resolve mcr.microsoft.com/dotnet/sdk:10.0@sha256:8c6edfb26c85153f236d26efebd9ad349aec403583f343f201ee67838b23658d 0.1s done
+#7 DONE 0.1s
+
+#5 [internal] load build context
+272c58efda97: Layer already exists
+8a289e1ea591: Layer already exists
+5b0eacacd99f: Layer already exists
+ab6d68e46bc0: Layer already exists
+#5 transferring context: 123.95kB 0.2s done
+#5 DONE 0.2s
+
+#8 [build 2/6] WORKDIR /src
+#8 CACHED
+
+#9 [build 3/6] COPY GridMeter.sln ./
+#9 CACHED
+
+#10 [build 4/6] COPY src/ src/
+#10 CACHED
+
+#11 [build 5/6] COPY tests/ tests/
+#11 CACHED
+
+#12 [build 6/6] RUN dotnet publish src/GridMeter.Api -c Release -o /out/api --nologo  && dotnet publish src/GridMeter.PriceMock -c Release -o /out/pricemock --nologo  && dotnet publish src/GridMeter.MeterParser.LocalRunner -c Release -o /out/parser --nologo
+#12 CACHED
+
+#13 [pricemock 2/3] WORKDIR /app
+#13 CACHED
+
+#14 [pricemock 3/3] COPY --from=build /out/pricemock .
+#14 CACHED
+
+#15 exporting to image
+#15 exporting layers done
+#15 exporting manifest sha256:abe608ac86607a3067c2d09acdf72880a111e38dca1d2dbe549949b355b671f6 done
+#15 exporting config sha256:6ee04bb795db578ddd1b303d2191ad1b30f18925a2bdb232b0e251d0036ef22b done
+#15 naming to docker.io/library/cdkasset-93376ed12c84619323ddfb3f2665f42766ef0f1c712828add3e54dcc67d54663:latest done
+#15 unpacking to docker.io/library/cdkasset-93376ed12c84619323ddfb3f2665f42766ef0f1c712828add3e54dcc67d54663:latest 0.0s done
+#15 DONE 0.1s
+GridMeter: success: Built PriceImage
+GridMeter: start: Publishing PriceImage (<ACCOUNT_ID>-ap-southeast-2-aff5f061)
+f04ae1f994c74e5a910f4473a821fa1492071c173e916438ee075440a027148d: digest: sha256:0a278c6c5849ea5c098ad4fffbba1b28a294c9945ab193c9df211216d949284c size: 1818
+GridMeter: success: Published ApiImage (<ACCOUNT_ID>-ap-southeast-2-faa22668)
+The push refers to repository [<ACCOUNT_ID>.dkr.ecr.ap-southeast-2.amazonaws.com/cdk-gridmtr-container-assets-<ACCOUNT_ID>-ap-southeast-2]
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+590be7a8d3a7: Waiting
+590be7a8d3a7: Waiting
+245c91b0e5fd: Waiting
+21e39e10606f: Waiting
+bbb89ae32e02: Waiting
+272c58efda97: Waiting
+8a289e1ea591: Waiting
+5b0eacacd99f: Waiting
+e35728ee374e: Waiting
+590be7a8d3a7: Layer already exists
+245c91b0e5fd: Layer already exists
+21e39e10606f: Layer already exists
+bbb89ae32e02: Layer already exists
+272c58efda97: Waiting
+8a289e1ea591: Waiting
+5b0eacacd99f: Waiting
+e35728ee374e: Waiting
+8a289e1ea591: Waiting
+5b0eacacd99f: Waiting
+e35728ee374e: Waiting
+272c58efda97: Waiting
+5b0eacacd99f: Waiting
+e35728ee374e: Waiting
+272c58efda97: Waiting
+8a289e1ea591: Waiting
+272c58efda97: Layer already exists
+8a289e1ea591: Layer already exists
+5b0eacacd99f: Layer already exists
+e35728ee374e: Layer already exists
+93376ed12c84619323ddfb3f2665f42766ef0f1c712828add3e54dcc67d54663: digest: sha256:abe608ac86607a3067c2d09acdf72880a111e38dca1d2dbe549949b355b671f6 size: 1815
+GridMeter: success: Published PriceImage (<ACCOUNT_ID>-ap-southeast-2-aff5f061)
+GridMeter: creating CloudFormation changeset...
+GridMeter: deploying... [1/1]
+
+✅  GridMeter
+
+✨  Deployment time: 770.99s
+
+Outputs:
+GridMeter.AlbUrl = http://GridMe-ApiLB-QjMB6Z8jCViI-828563906.ap-southeast-2.elb.amazonaws.com
+GridMeter.ApiLoadBalancerDNSB0038DD0 = GridMe-ApiLB-QjMB6Z8jCViI-828563906.ap-southeast-2.elb.amazonaws.com
+GridMeter.ApiLogGroup = GridMeter-ApiLogs3D05D88B-KK6n3A8WE5Li
+GridMeter.ApiServiceURL135D4FCA = http://GridMe-ApiLB-QjMB6Z8jCViI-828563906.ap-southeast-2.elb.amazonaws.com
+GridMeter.AppConfigApplicationId = tmzvul2
+GridMeter.AppConfigEnvironmentId = vbszga3
+GridMeter.AppConfigProfileId = t8qcor7
+GridMeter.AppConfigStrategyId = iqvtt6m
+GridMeter.ClusterName = GridMeter-ClusterEB0386A7-pVA7hvz9cdNI
+GridMeter.DbEndpoint = gridmeter-db5d02a0a9-ipkifnbkj1bq.che8ea6a6k4s.ap-southeast-2.rds.amazonaws.com
+GridMeter.DbSecretArn = arn:aws:secretsmanager:ap-southeast-2:<ACCOUNT_ID>:secret:GridMeterDbSecret0F2E34893f-8YDmbtK0AMVD-znj72e
+GridMeter.DrQueueName = gridmeter-dr-events
+GridMeter.LambdaLogGroup = GridMeter-ParserLogs1B92321C-MVEfTjPilv13
+GridMeter.LambdaName = GridMeter-MeterParserF319ACB7-Mdkr5ecTTXlh
+GridMeter.MigrateLogGroup = GridMeter-MigrateLogs5B280EF4-JYjKLhTun0OD
+GridMeter.MigrateSecurityGroup = sg-09a096cc149824aef
+GridMeter.MigrateTaskDefinition = arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterMigrateTaskA40CA54E:3
+GridMeter.PriceLogGroup = GridMeter-PriceLogsABB960B1-MecZTyZ4Irv8
+GridMeter.PublicSubnets = subnet-0c02f31c2e0ff442f,subnet-012327aba5f4ce949
+GridMeter.ReadingsQueueName = gridmeter-readings
+GridMeter.ServiceName = GridMeter-ApiServiceD5B4A50A-Gfo1NzWOnM3f
+GridMeter.SpaBucket = gridmeter-spa2bd05371-tj6pecd3mqnx
+GridMeter.SpaUrl = http://gridmeter-spa2bd05371-tj6pecd3mqnx.s3-website-ap-southeast-2.amazonaws.com
+GridMeter.UploadsBucket = gridmeter-uploads4f6eb0fd-eg9gathwdeef
+Stack ARN:
+arn:aws:cloudformation:ap-southeast-2:<ACCOUNT_ID>:stack/GridMeter/45312790-e954-11f1-91b2-06ffd81a4b03
+
+✨  Total time: 884.31s
+

@@ -1,0 +1,10 @@
+SPA: http://gridmeter-spa2bd05371-tj6pecd3mqnx.s3-website-ap-southeast-2.amazonaws.com  API: http://GridMe-ApiLB-QjMB6Z8jCViI-828563906.ap-southeast-2.elb.amazonaws.com
+before: {"version":"cloud","environment":"Production","tariffEstimates":false,"canToggleFlags":false}
+created hosted configuration version 6: {"FeatureManagement":{"tariff-estimates":true}}
+deployment 9: COMPLETE
+AppConfig flag tariff-estimates = true. The API picks it up on its next poll (within ~15 seconds).
+after (flag on):  {"version":"cloud","environment":"Production","tariffEstimates":true,"canToggleFlags":false}
+created hosted configuration version 7: {"FeatureManagement":{"tariff-estimates":false}}
+deployment 10: COMPLETE
+AppConfig flag tariff-estimates = false. The API picks it up on its next poll (within ~15 seconds).
+after (flag off): {"version":"cloud","environment":"Production","tariffEstimates":false,"canToggleFlags":false}

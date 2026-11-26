@@ -1,0 +1,143 @@
+Deployed AWS resources (ap-southeast-2), from stack outputs and describe calls
+
+--- CloudFormation outputs ---
+UploadsBucket = gridmeter-uploads4f6eb0fd-eg9gathwdeef
+MigrateLogGroup = GridMeter-MigrateLogs5B280EF4-JYjKLhTun0OD
+SpaBucket = gridmeter-spa2bd05371-tj6pecd3mqnx
+ReadingsQueueName = gridmeter-readings
+DbEndpoint = gridmeter-db5d02a0a9-ipkifnbkj1bq.che8ea6a6k4s.ap-southeast-2.rds.amazonaws.com
+ApiLogGroup = GridMeter-ApiLogs3D05D88B-KK6n3A8WE5Li
+PriceLogGroup = GridMeter-PriceLogsABB960B1-MecZTyZ4Irv8
+LambdaName = GridMeter-MeterParserF319ACB7-Mdkr5ecTTXlh
+AppConfigStrategyId = iqvtt6m
+ApiLoadBalancerDNSB0038DD0 = GridMe-ApiLB-QjMB6Z8jCViI-828563906.ap-southeast-2.elb.amazonaws.com
+SpaUrl = http://gridmeter-spa2bd05371-tj6pecd3mqnx.s3-website-ap-southeast-2.amazonaws.com
+AlbUrl = http://GridMe-ApiLB-QjMB6Z8jCViI-828563906.ap-southeast-2.elb.amazonaws.com
+AppConfigEnvironmentId = vbszga3
+ServiceName = GridMeter-ApiServiceD5B4A50A-Gfo1NzWOnM3f
+DbSecretArn = arn:aws:secretsmanager:ap-southeast-2:<ACCOUNT_ID>:secret:GridMeterDbSecret0F2E34893f-8YDmbtK0AMVD-znj72e
+AppConfigProfileId = t8qcor7
+PublicSubnets = subnet-0c02f31c2e0ff442f,subnet-012327aba5f4ce949
+ClusterName = GridMeter-ClusterEB0386A7-pVA7hvz9cdNI
+ApiServiceURL135D4FCA = http://GridMe-ApiLB-QjMB6Z8jCViI-828563906.ap-southeast-2.elb.amazonaws.com
+MigrateTaskDefinition = arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterMigrateTaskA40CA54E:5
+LambdaLogGroup = GridMeter-ParserLogs1B92321C-MVEfTjPilv13
+DrQueueName = gridmeter-dr-events
+AppConfigApplicationId = tmzvul2
+MigrateSecurityGroup = sg-09a096cc149824aef
+
+--- RDS ---
+--------------------------------------------------
+|               DescribeDBInstances              |
++---------+--------------------------------------+
+|  Class  |  db.t3.small                         |
+|  Engine |  sqlserver-ex                        |
+|  Id     |  gridmeter-db5d02a0a9-ipkifnbkj1bq   |
+|  MultiAZ|  False                               |
+|  Public |  False                               |
+|  Status |  available                           |
+|  Storage|  20                                  |
++---------+--------------------------------------+
+--- ECS service ---
+-------------------------------------------------------------
+|                     DescribeServices                      |
++------------+----------------------------------------------+
+|  Desired   |  1                                           |
+|  LaunchType|  FARGATE                                     |
+|  Name      |  GridMeter-ApiServiceD5B4A50A-Gfo1NzWOnM3f   |
+|  Running   |  1                                           |
+|  Status    |  ACTIVE                                      |
++------------+----------------------------------------------+
+--- Lambda ---
+---------------------------------------------------------------------------------------------
+|                                 GetFunctionConfiguration                                  |
++---------+---------------------------------------------------------------------------------+
+|  Handler|  GridMeter.MeterParser.Lambda::GridMeter.MeterParser.Lambda.Function::Handler   |
+|  Memory |  512                                                                            |
+|  Name   |  GridMeter-MeterParserF319ACB7-Mdkr5ecTTXlh                                     |
+|  Runtime|  dotnet10                                                                       |
+|  Timeout|  60                                                                             |
++---------+---------------------------------------------------------------------------------+
+--- SQS ---
+https://sqs.ap-southeast-2.amazonaws.com/<ACCOUNT_ID>/gridmeter-dr-events
+https://sqs.ap-southeast-2.amazonaws.com/<ACCOUNT_ID>/gridmeter-dr-events-dlq
+https://sqs.ap-southeast-2.amazonaws.com/<ACCOUNT_ID>/gridmeter-readings
+https://sqs.ap-southeast-2.amazonaws.com/<ACCOUNT_ID>/gridmeter-readings-dlq
+--- S3 ---
+gridmeter-spa2bd05371-tj6pecd3mqnx
+gridmeter-uploads4f6eb0fd-eg9gathwdeef
+--- AppConfig ---
+---------------------------------
+|       ListApplications        |
++----------+--------------------+
+|    Id    |       Name         |
++----------+--------------------+
+|  tmzvul2 |  grid-meter-cloud  |
++----------+--------------------+
+--- Secrets Manager ---
+GridMeterDbSecret0F2E34893f-8YDmbtK0AMVD
+JwtKey564D8501-o6V9r8id42hs
+--- SPA hosting ---
+S3 static website: http://gridmeter-spa2bd05371-tj6pecd3mqnx.s3-website-ap-southeast-2.amazonaws.com (CloudFront not used, see docs/DECISIONS.md)
+--- Tagged resources (Project=grid-meter-cloud) ---
+arn:aws:appconfig:ap-southeast-2:<ACCOUNT_ID>:application/tmzvul2
+arn:aws:appconfig:ap-southeast-2:<ACCOUNT_ID>:application/tmzvul2/environment/vbszga3
+arn:aws:cloudformation:ap-southeast-2:<ACCOUNT_ID>:stack/GridMeter/45312790-e954-11f1-91b2-06ffd81a4b03
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:security-group/sg-0fbed09b806cb6dcd
+arn:aws:ecr:ap-southeast-2:<ACCOUNT_ID>:repository/cdk-gridmtr-container-assets-<ACCOUNT_ID>-ap-southeast-2
+arn:aws:elasticloadbalancing:ap-southeast-2:<ACCOUNT_ID>:targetgroup/GridMe-ApiLB-IBLNUBULSK9R/b5135c2ea583f422
+arn:aws:sqs:ap-southeast-2:<ACCOUNT_ID>:gridmeter-readings
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:internet-gateway/igw-07e6265c6f0b82f89
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterApiTaskDef2D4F5307:4
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterApiTaskDef2D4F5307:1
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterMigrateTaskA40CA54E:4
+arn:aws:rds:ap-southeast-2:<ACCOUNT_ID>:subgrp:gridmeter-dbsubnetgroup6f6c177a-lltvjkrl2kwt
+arn:aws:s3:::gridmeter-uploads4f6eb0fd-eg9gathwdeef
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:route-table/rtb-0d7e313ec4d400b19
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:security-group/sg-02ab8eaec5add8b38
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:subnet/subnet-0c02f31c2e0ff442f
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterMigrateTaskA40CA54E:3
+arn:aws:lambda:ap-southeast-2:<ACCOUNT_ID>:function:GridMeter-MeterParserF319ACB7-Mdkr5ecTTXlh
+arn:aws:logs:ap-southeast-2:<ACCOUNT_ID>:log-group:GridMeter-ParserLogs1B92321C-MVEfTjPilv13
+arn:aws:s3:::cdk-gridmtr-assets-<ACCOUNT_ID>-ap-southeast-2
+arn:aws:ssm:ap-southeast-2:<ACCOUNT_ID>:parameter/cdk-bootstrap/gridmtr/version
+arn:aws:appconfig:ap-southeast-2:<ACCOUNT_ID>:application/tmzvul2/configurationprofile/t8qcor7
+arn:aws:cloudformation:ap-southeast-2:<ACCOUNT_ID>:stack/CDKToolkit-grid-meter-cloud/81648f70-e951-11f1-abcc-06ffdf9b6ccf
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:service/GridMeter-ClusterEB0386A7-pVA7hvz9cdNI/GridMeter-ApiServiceD5B4A50A-Gfo1NzWOnM3f
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterApiTaskDef2D4F5307:3
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterMigrateTaskA40CA54E:1
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterMigrateTaskA40CA54E:2
+arn:aws:elasticloadbalancing:ap-southeast-2:<ACCOUNT_ID>:loadbalancer/app/GridMe-ApiLB-QjMB6Z8jCViI/36fc8e34014421af
+arn:aws:lambda:ap-southeast-2:<ACCOUNT_ID>:function:GridMeter-CustomS3AutoDeleteObjectsCustomResourceP-cM340onst6Bd
+arn:aws:logs:ap-southeast-2:<ACCOUNT_ID>:log-group:GridMeter-PriceLogsABB960B1-MecZTyZ4Irv8
+arn:aws:secretsmanager:ap-southeast-2:<ACCOUNT_ID>:secret:JwtKey564D8501-o6V9r8id42hs-S3Ma20
+arn:aws:appconfig:ap-southeast-2:<ACCOUNT_ID>:deploymentstrategy/iqvtt6m
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:route-table/rtb-07621696bb8d37b57
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:security-group/sg-058bd493feabf10bf
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:subnet/subnet-0cb572b879ec9990f
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:subnet/subnet-04a49f38a61688363
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task/GridMeter-ClusterEB0386A7-pVA7hvz9cdNI/937ade2028de4c25a29e411429ad3d3c
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterMigrateTaskA40CA54E:5
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterApiTaskDef2D4F5307:5
+arn:aws:elasticloadbalancing:ap-southeast-2:<ACCOUNT_ID>:listener/app/GridMe-ApiLB-QjMB6Z8jCViI/36fc8e34014421af/21f1487aec4e8aa9
+arn:aws:logs:ap-southeast-2:<ACCOUNT_ID>:log-group:GridMeter-MigrateLogs5B280EF4-JYjKLhTun0OD
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:security-group/sg-09a096cc149824aef
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:cluster/GridMeter-ClusterEB0386A7-pVA7hvz9cdNI
+arn:aws:lambda:ap-southeast-2:<ACCOUNT_ID>:function:GridMeter-BucketNotificationsHandler050a0587b75445-JggRi9vyoDw2
+arn:aws:rds:ap-southeast-2:<ACCOUNT_ID>:db:gridmeter-db5d02a0a9-ipkifnbkj1bq
+arn:aws:s3:::gridmeter-spa2bd05371-tj6pecd3mqnx
+arn:aws:sqs:ap-southeast-2:<ACCOUNT_ID>:gridmeter-readings-dlq
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:subnet/subnet-012327aba5f4ce949
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:vpc/vpc-0650adef4e372bcc4
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:cluster/GridMeter-ClusterEB0386A7-7ejyOv1Wozfe
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task-definition/GridMeterApiTaskDef2D4F5307:2
+arn:aws:logs:ap-southeast-2:<ACCOUNT_ID>:log-group:GridMeter-ApiLogs3D05D88B-KK6n3A8WE5Li
+arn:aws:secretsmanager:ap-southeast-2:<ACCOUNT_ID>:secret:GridMeterDbSecret0F2E34893f-8YDmbtK0AMVD-znj72e
+arn:aws:appconfig:ap-southeast-2:<ACCOUNT_ID>:application/tmzvul2/environment/vbszga3/deployment/1
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:route-table/rtb-0c5c75ed158b5f430
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:route-table/rtb-0119399e300a5017a
+arn:aws:ec2:ap-southeast-2:<ACCOUNT_ID>:subnet/subnet-0b283ba892a7a70cd
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task/GridMeter-ClusterEB0386A7-pVA7hvz9cdNI/914c6a2ddb7f4ca4a4d8718650682b1f
+arn:aws:ecs:ap-southeast-2:<ACCOUNT_ID>:task/GridMeter-ClusterEB0386A7-pVA7hvz9cdNI/32f2614cc69f4f759bb9a3571cbf6414
+arn:aws:sqs:ap-southeast-2:<ACCOUNT_ID>:gridmeter-dr-events-dlq
+arn:aws:sqs:ap-southeast-2:<ACCOUNT_ID>:gridmeter-dr-events

@@ -1,0 +1,6 @@
+
+Running 1 test using 1 worker
+
+  ok 1 e2e\flow.spec.ts:43:1 › upload a meter file and see consumption, estimate and demand response (36.3s)
+
+  1 passed (37.8s)
