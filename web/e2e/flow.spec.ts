@@ -4,8 +4,17 @@ import { join } from 'node:path';
 
 // Set PROOF_DIR to also write the proof screenshots (scripts/capture-proof.sh does this).
 const proofDir = process.env.PROOF_DIR;
+const cloudNames: Record<string, string> = {
+  '03-consumption-chart.png': '01-cloud-dashboard.png',
+  '04-estimate-flag-on.png': '02-cloud-estimate.png',
+  '06-tenant-switch-isolation.png': '03-cloud-tenant-isolation.png',
+};
 async function shot(page: Page, name: string) {
   if (!proofDir) return;
+  if (process.env.CLOUD) {
+    if (!cloudNames[name]) return;
+    name = cloudNames[name];
+  }
   mkdirSync(proofDir, { recursive: true });
   await page.screenshot({ path: join(proofDir, name), fullPage: true });
 }
@@ -65,7 +74,8 @@ test('upload a meter file and see consumption, estimate and demand response', as
   // F5: feature flag on -> estimate visible
   await page.getByRole('link', { name: 'Admin' }).click();
   const flag = page.locator('#flag-tariff-estimates');
-  if ((await flag.getAttribute('aria-checked')) !== 'true') await page.locator('label[for="flag-tariff-estimates"]').click();
+  // Locally the page can flip the flag; in AWS the flag lives in AppConfig and is read-only here.
+  if (!(await flag.isDisabled()) && (await flag.getAttribute('aria-checked')) !== 'true') await page.locator('label[for="flag-tariff-estimates"]').click();
   await expect(flag).toHaveAttribute('aria-checked', 'true');
   await page.goBack();
   await expect(page.getByTestId('estimate-panel')).toBeVisible();
