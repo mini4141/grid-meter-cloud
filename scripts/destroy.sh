@@ -21,6 +21,20 @@ if aws ecr describe-repositories --repository-names "$REPO" >/dev/null 2>&1; the
   [ "$IDS" != "[]" ] && aws ecr batch-delete-image --repository-name "$REPO" --image-ids "$IDS" >/dev/null
 fi
 
+echo "== 1b. AppConfig: bypass deletion protection (the API polled it within the last 60 minutes) =="
+for app in $(aws appconfig list-applications --query "Items[?Name=='grid-meter-cloud'].Id" --output text); do
+  for env in $(aws appconfig list-environments --application-id "$app" --query 'Items[].Id' --output text); do
+    aws appconfig delete-environment --application-id "$app" --environment-id "$env" --deletion-protection-check BYPASS
+  done
+  for prof in $(aws appconfig list-configuration-profiles --application-id "$app" --query 'Items[].Id' --output text); do
+    for v in $(aws appconfig list-hosted-configuration-versions --application-id "$app" --configuration-profile-id "$prof" --query 'Items[].VersionNumber' --output text); do
+      aws appconfig delete-hosted-configuration-version --application-id "$app" --configuration-profile-id "$prof" --version-number "$v"
+    done
+    aws appconfig delete-configuration-profile --application-id "$app" --configuration-profile-id "$prof" --deletion-protection-check BYPASS
+  done
+  aws appconfig delete-application --application-id "$app" --deletion-protection-check BYPASS && echo "deleted AppConfig application $app"
+done
+
 echo "== 2. cdk destroy =="
 if [ "$(stack_status $STACK)" != "GONE" ]; then
   mkdir -p artifacts/parser-lambda   # the synth needs the asset folder to exist
@@ -38,6 +52,16 @@ echo "== 3. secrets (force delete, no recovery window) =="
 for arn in $(aws secretsmanager list-secrets --include-planned-deletion --query "SecretList[?Tags[?Key=='Project' && Value=='grid-meter-cloud']].ARN" --output text); do
   aws secretsmanager delete-secret --secret-id "$arn" --force-delete-without-recovery >/dev/null && echo "deleted secret"
 done
+
+echo "== 3b. leftover CloudWatch log groups created by CDK helper Lambdas =="
+for g in $(aws logs describe-log-groups --query "logGroups[?contains(logGroupName, 'GridMeter')].logGroupName" --output text); do
+  aws logs delete-log-group --log-group-name "$g" && echo "deleted log group $g"
+done
+
+if [ "$(stack_status $STACK)" != "GONE" ]; then
+  echo "stack $STACK still exists: NOT deleting the bootstrap stack (its roles are needed to finish the delete). Re-run this script."
+  exit 1
+fi
 
 echo "== 4. bootstrap stack and staging bucket =="
 STAGING="cdk-$QUALIFIER-assets-$ACCOUNT-$AWS_REGION"

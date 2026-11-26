@@ -66,7 +66,7 @@ public sealed class Function
                 }
             }).ToList();
             var resp = await _sqs.SendMessageBatchAsync(queueUrl, entries);
-            if (resp.Failed.Count > 0) throw new InvalidOperationException($"{resp.Failed.Count} batch entries failed to send");
+            if (resp.Failed is { Count: > 0 }) throw new InvalidOperationException($"{resp.Failed.Count} batch entries failed to send");
         }
         log($"Sent {batches.Count} SQS messages to {_queueName}");
         return batches.Count;

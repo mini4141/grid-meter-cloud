@@ -20,6 +20,12 @@ public sealed class ErrorMappingMiddleware(RequestDelegate next)
                 errors = ex.Errors.Select(e => new { field = e.PropertyName, message = e.ErrorMessage })
             });
         }
+        catch (HttpRequestException)
+        {
+            // e.g. the wholesale price API stayed down after all Polly retries
+            ctx.Response.StatusCode = StatusCodes.Status503ServiceUnavailable;
+            await ctx.Response.WriteAsJsonAsync(new { title = "A dependency is unavailable, try again" });
+        }
         catch (KeyNotFoundException ex)
         {
             ctx.Response.StatusCode = StatusCodes.Status404NotFound;

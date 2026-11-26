@@ -25,26 +25,38 @@ echo "== 3. cdk deploy =="
   cdk deploy --all --require-approval never --outputs-file ../.local/cdk-outputs.json ) 2>&1 | redact | tee "$LOG/cdk-deploy.log"
 
 echo "== 4. EF migrations through a one-off ECS task =="
-TASK=$(aws ecs run-task --cluster "$(out ClusterName)" --launch-type FARGATE --task-definition "$(out MigrateTaskDefinition)" \
-  --network-configuration "awsvpcConfiguration={subnets=[$(out PublicSubnets)],securityGroups=[$(out MigrateSecurityGroup)],assignPublicIp=ENABLED}" \
-  --tags key=Project,value=grid-meter-cloud key=Ephemeral,value=true key=ManagedBy,value=cdk key=Owner,value=alvieirvansyah \
-  --query 'tasks[0].taskArn' --output text)
-aws ecs wait tasks-stopped --cluster "$(out ClusterName)" --tasks "$TASK"
-EXIT=$(aws ecs describe-tasks --cluster "$(out ClusterName)" --tasks "$TASK" --query 'tasks[0].containers[0].exitCode' --output text)
-sleep 5
-aws logs tail "$(out MigrateLogGroup)" --since 30m 2>&1 | redact > "$LOG/ef-migrations-cloud.log" || true
-[ "$EXIT" = "0" ] || { echo "migration task failed (exit $EXIT)"; cat "$LOG/ef-migrations-cloud.log"; exit 1; }
+# The first attempt can time out while the API task holds connections to the freshly created database, so retry.
+EXIT=1
+for attempt in 1 2 3; do
+  TASK=$(aws ecs run-task --cluster "$(out ClusterName)" --launch-type FARGATE --task-definition "$(out MigrateTaskDefinition)" \
+    --network-configuration "awsvpcConfiguration={subnets=[$(out PublicSubnets)],securityGroups=[$(out MigrateSecurityGroup)],assignPublicIp=ENABLED}" \
+    --tags key=Project,value=grid-meter-cloud key=Ephemeral,value=true key=ManagedBy,value=cdk key=Owner,value=alvieirvansyah \
+    --query 'tasks[0].taskArn' --output text)
+  aws ecs wait tasks-stopped --cluster "$(out ClusterName)" --tasks "$TASK"
+  EXIT=$(aws ecs describe-tasks --cluster "$(out ClusterName)" --tasks "$TASK" --query 'tasks[0].containers[0].exitCode' --output text)
+  sleep 5
+  aws logs tail "$(out MigrateLogGroup)" --since 30m 2>&1 | redact > "$LOG/ef-migrations-cloud.log" || true
+  [ "$EXIT" = "0" ] && break
+  echo "migration attempt $attempt failed (exit $EXIT), retrying"
+done
+[ "$EXIT" = "0" ] || { echo "migration task failed (exit $EXIT)"; tail -20 "$LOG/ef-migrations-cloud.log"; exit 1; }
 echo "migrations applied"
 
 echo "== 5. upload the SPA =="
+API_URL=$(out AlbUrl)
+# config.js tells the SPA where the API is (the SPA bucket and the ALB are different origins)
+echo "window.__GRIDMETER__ = { apiUrl: \"$API_URL\" };" > web/dist/config.js
 aws s3 sync web/dist "s3://$(out SpaBucket)" --delete
-aws cloudfront create-invalidation --distribution-id "$(out DistributionId)" --paths '/*' >/dev/null
+DIST=$(out DistributionId 2>/dev/null || true)
+if [ -n "$DIST" ] && [ "$DIST" != "undefined" ]; then
+  aws cloudfront create-invalidation --distribution-id "$DIST" --paths '/*' >/dev/null
+fi
 
-echo "CLOUD_URL=$(out CloudFrontUrl)" > .local/cloud.env
-echo "Deployed: $(out CloudFrontUrl)"
-echo "Waiting for the API behind CloudFront..."
+{ echo "CLOUD_URL=$(out SpaUrl)"; echo "API_URL=$API_URL"; } > .local/cloud.env
+echo "Deployed: SPA $(out SpaUrl)  API $API_URL"
+echo "Waiting for the API..."
 for _ in $(seq 1 60); do
-  curl -fs "$(out CloudFrontUrl)/api/admin/info" >/dev/null && break
+  curl -fs "$API_URL/api/admin/info" >/dev/null && break
   sleep 5
 done
 echo "Next: scripts/capture-proof.sh phase2   then   scripts/destroy.sh"

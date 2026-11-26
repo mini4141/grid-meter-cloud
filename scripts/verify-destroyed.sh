@@ -29,27 +29,28 @@ check "Elastic IPs" "$(aws ec2 describe-addresses --query 'Addresses[].PublicIp'
 check "VPCs tagged Project" "$(aws ec2 describe-vpcs --filters Name=tag:Project,Values=grid-meter-cloud --query 'Vpcs[].VpcId' --output text)"
 check "S3 buckets (gridmeter-*, cdk-gridmtr-*)" "$(aws s3api list-buckets --query "Buckets[?starts_with(Name, 'gridmeter-') || starts_with(Name, 'cdk-gridmtr-')].Name" --output text)"
 check "ECR repositories (cdk-gridmtr-*)" "$(aws ecr describe-repositories --query "repositories[?starts_with(repositoryName, 'cdk-gridmtr-')].repositoryName" --output text 2>/dev/null)"
-check "CloudFront distributions (tagged)" "$(for d in $(aws cloudfront list-distributions --query 'DistributionList.Items[].ARN' --output text); do aws cloudfront list-tags-for-resource --resource "$d" --query "Tags.Items[?Key=='Project' && Value=='grid-meter-cloud'].Value" --output text | grep -q . && echo "$d"; done)"
+check "CloudFront distributions (tagged)" "$(for d in $(aws cloudfront list-distributions --query 'DistributionList.Items[].ARN' --output text | tr '	' ' ' | grep -o 'arn:[^ ]*'); do aws cloudfront list-tags-for-resource --resource "$d" --query "Tags.Items[?Key=='Project' && Value=='grid-meter-cloud'].Value" --output text | grep -q . && echo "$d"; done)"
 check "CloudFormation stacks" "$(aws cloudformation describe-stacks --query "Stacks[?StackName=='$STACK' || StackName=='$TOOLKIT'].StackName" --output text 2>/dev/null)"
 check "CloudWatch log groups (GridMeter)" "$(aws logs describe-log-groups --query "logGroups[?contains(logGroupName, 'GridMeter')].logGroupName" --output text)"
 check "IAM roles (cdk-gridmtr-*, GridMeter-*)" "$(aws iam list-roles --query "Roles[?starts_with(RoleName, 'cdk-gridmtr-') || starts_with(RoleName, 'GridMeter-')].RoleName" --output text)"
 
-echo "--- tagging API (eventually consistent, retried for up to 6 minutes) ---"
-HITS=""
-for i in 1 2 3 4 5 6 7; do
-  HITS=""
-  for r in ap-southeast-2 us-east-1; do
-    HITS="$HITS$(aws resourcegroupstaggingapi get-resources --region $r --tag-filters Key=Project,Values=grid-meter-cloud --query 'ResourceTagMappingList[].ResourceARN' --output text)"
-  done
-  [ -z "${HITS// /}" ] && break
-  echo "attempt $i: tagging API still lists resources, waiting 60s"; sleep 60
+echo "--- tagging API cross-check ---"
+TAGGED=""; DENIED=""
+for r in ap-southeast-2 us-east-1; do
+  RES=$(aws resourcegroupstaggingapi get-resources --region $r --tag-filters Key=Project,Values=grid-meter-cloud --query 'ResourceTagMappingList[].ResourceARN' --output text 2>&1)
+  case "$RES" in *AccessDenied*) DENIED=1 ;; *) TAGGED="$TAGGED $RES" ;; esac
 done
-if [ -z "${HITS// /}" ]; then
+if [ -n "$DENIED" ]; then
+  echo "NOTE  the deployer profile is not allowed to call tag:GetResources (explicit deny), so the tagging API cross-check was skipped; the direct describe/list checks above are the source of truth."
+elif [ -z "${TAGGED// /}" ]; then
   echo "OK    tagging API: no resources tagged Project=grid-meter-cloud"
 else
-  echo "NOTE  tagging API still lists (stale index entries are expected for a while; the direct checks above decide the exit code):"
-  echo "$HITS" | tr '\t' '\n'
+  echo "NOTE  tagging API still lists (its index lags behind deletions); direct checks above decide the result:"
+  echo "$TAGGED" | tr '	 ' '
+
+' | sed '/^$/d'
 fi
+check "ECS clusters in any state (GridMeter)" "$(aws ecs describe-clusters --clusters $(aws ecs list-clusters --query 'clusterArns' --output text) --query "clusters[?contains(clusterName, 'GridMeter') && status=='ACTIVE'].clusterName" --output text 2>/dev/null)"
 
 echo
 [ "$FAIL" = 0 ] && echo "RESULT: nothing billable left" || echo "RESULT: resources remain, see FAIL lines"

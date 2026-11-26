@@ -97,7 +97,7 @@ public sealed class GridMeterStack : Stack
         var db = new DatabaseInstance(this, "Db", new DatabaseInstanceProps
         {
             Engine = DatabaseInstanceEngine.SqlServerEx(new SqlServerExInstanceEngineProps { Version = SqlServerEngineVersion.VER_16 }),
-            InstanceType = Amazon.CDK.AWS.EC2.InstanceType.Of(InstanceClass.T3, InstanceSize.MICRO),
+            InstanceType = Amazon.CDK.AWS.EC2.InstanceType.Of(InstanceClass.T3, InstanceSize.SMALL),
             Vpc = vpc,
             VpcSubnets = new SubnetSelection { SubnetType = SubnetType.PRIVATE_ISOLATED },
             SecurityGroups = new[] { dbSecurityGroup },
@@ -258,48 +258,69 @@ public sealed class GridMeterStack : Stack
         var migrateSg = new SecurityGroup(this, "MigrateSg", new SecurityGroupProps { Vpc = vpc, Description = "one-off migration task" });
         db.Connections.AllowDefaultPortFrom(migrateSg, "migration task to SQL Server");
 
-        // ---- SPA on S3 + CloudFront; /api/* is routed to the ALB so the browser only talks to one HTTPS origin ----
-        var spaBucket = new Bucket(this, "Spa", new BucketProps
-        {
-            BlockPublicAccess = BlockPublicAccess.BLOCK_ALL,
-            RemovalPolicy = RemovalPolicy.DESTROY,
-            AutoDeleteObjects = true,
-        });
-        var spaRewrite = new Amazon.CDK.AWS.CloudFront.Function(this, "SpaRewrite", new Amazon.CDK.AWS.CloudFront.FunctionProps
-        {
-            Code = FunctionCode.FromInline(
-                "function handler(event) { var r = event.request; if (r.uri.indexOf('.') === -1) { r.uri = '/index.html'; } return r; }"),
-            Runtime = FunctionRuntime.JS_2_0,
-        });
-        var distribution = new Amazon.CDK.AWS.CloudFront.Distribution(this, "Cdn", new Amazon.CDK.AWS.CloudFront.DistributionProps
-        {
-            DefaultRootObject = "index.html",
-            PriceClass = PriceClass.PRICE_CLASS_100,
-            DefaultBehavior = new BehaviorOptions
+        // ---- SPA on S3. Default: S3 static website + direct calls to the ALB (CORS on the API).
+        //      With `cdk deploy -c cloudfront=true` (needs a CloudFront-verified account) it is served through CloudFront,
+        //      which also routes /api/* to the ALB so the browser only talks to one HTTPS origin. ----
+        var useCloudFront = "true".Equals(Node.TryGetContext("cloudfront")?.ToString());
+        var spaBucket = new Bucket(this, "Spa", useCloudFront
+            ? new BucketProps { BlockPublicAccess = BlockPublicAccess.BLOCK_ALL, RemovalPolicy = RemovalPolicy.DESTROY, AutoDeleteObjects = true }
+            : new BucketProps
             {
-                Origin = S3BucketOrigin.WithOriginAccessControl(spaBucket),
-                ViewerProtocolPolicy = ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-                FunctionAssociations = new IFunctionAssociation[]
+                BlockPublicAccess = new BlockPublicAccess(new BlockPublicAccessOptions
                 {
-                    new FunctionAssociation { EventType = FunctionEventType.VIEWER_REQUEST, Function = spaRewrite },
-                },
-            },
-            AdditionalBehaviors = new Dictionary<string, IBehaviorOptions>
+                    BlockPublicAcls = false, BlockPublicPolicy = false, IgnorePublicAcls = false, RestrictPublicBuckets = false,
+                }),
+                PublicReadAccess = true,
+                WebsiteIndexDocument = "index.html",
+                WebsiteErrorDocument = "index.html",
+                RemovalPolicy = RemovalPolicy.DESTROY,
+                AutoDeleteObjects = true,
+            });
+
+        string spaUrl;
+        if (useCloudFront)
+        {
+            var spaRewrite = new Amazon.CDK.AWS.CloudFront.Function(this, "SpaRewrite", new Amazon.CDK.AWS.CloudFront.FunctionProps
             {
-                ["/api/*"] = new BehaviorOptions
+                Code = FunctionCode.FromInline(
+                    "function handler(event) { var r = event.request; if (r.uri.indexOf('.') === -1) { r.uri = '/index.html'; } return r; }"),
+                Runtime = FunctionRuntime.JS_2_0,
+            });
+            var distribution = new Amazon.CDK.AWS.CloudFront.Distribution(this, "Cdn", new Amazon.CDK.AWS.CloudFront.DistributionProps
+            {
+                DefaultRootObject = "index.html",
+                PriceClass = PriceClass.PRICE_CLASS_100,
+                DefaultBehavior = new BehaviorOptions
                 {
-                    Origin = new LoadBalancerV2Origin(service.LoadBalancer, new LoadBalancerV2OriginProps { ProtocolPolicy = OriginProtocolPolicy.HTTP_ONLY }),
-                    ViewerProtocolPolicy = ViewerProtocolPolicy.HTTPS_ONLY,
-                    AllowedMethods = AllowedMethods.ALLOW_ALL,
-                    CachePolicy = CachePolicy.CACHING_DISABLED,
-                    OriginRequestPolicy = OriginRequestPolicy.ALL_VIEWER,
+                    Origin = S3BucketOrigin.WithOriginAccessControl(spaBucket),
+                    ViewerProtocolPolicy = ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+                    FunctionAssociations = new IFunctionAssociation[]
+                    {
+                        new FunctionAssociation { EventType = FunctionEventType.VIEWER_REQUEST, Function = spaRewrite },
+                    },
                 },
-            },
-        });
+                AdditionalBehaviors = new Dictionary<string, IBehaviorOptions>
+                {
+                    ["/api/*"] = new BehaviorOptions
+                    {
+                        Origin = new LoadBalancerV2Origin(service.LoadBalancer, new LoadBalancerV2OriginProps { ProtocolPolicy = OriginProtocolPolicy.HTTP_ONLY }),
+                        ViewerProtocolPolicy = ViewerProtocolPolicy.HTTPS_ONLY,
+                        AllowedMethods = AllowedMethods.ALLOW_ALL,
+                        CachePolicy = CachePolicy.CACHING_DISABLED,
+                        OriginRequestPolicy = OriginRequestPolicy.ALL_VIEWER,
+                    },
+                },
+            });
+            spaUrl = "https://" + distribution.DistributionDomainName;
+            Out("DistributionId", distribution.DistributionId);
+        }
+        else
+        {
+            spaUrl = spaBucket.BucketWebsiteUrl;
+        }
 
         // ---- outputs used by the deploy / destroy / proof scripts ----
-        Out("CloudFrontUrl", "https://" + distribution.DistributionDomainName);
-        Out("DistributionId", distribution.DistributionId);
+        Out("SpaUrl", spaUrl);
         Out("AlbUrl", "http://" + service.LoadBalancer.LoadBalancerDnsName);
         Out("SpaBucket", spaBucket.BucketName);
         Out("UploadsBucket", uploads.BucketName);

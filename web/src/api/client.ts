@@ -19,7 +19,8 @@ export function createClient(tenantOverride?: string): ApiClient {
     undefined,
     KiotaClientFactory.create(authedFetch),
   );
-  adapter.baseUrl = window.location.origin;
+  // config.js (written at deploy time) points the SPA at the API when it is not served from the same origin.
+  adapter.baseUrl = (window as { __GRIDMETER__?: { apiUrl?: string } }).__GRIDMETER__?.apiUrl || window.location.origin;
   return createApiClient(adapter);
 }
 

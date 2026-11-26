@@ -35,6 +35,8 @@ builder.Services.AddMultiTenant<TenantInfo>()
     .WithHostStrategy("__tenant__.*")
     .WithConfigurationStore();
 
+// The SPA may be served from another origin (S3 website); auth is a bearer token, so open CORS is fine for the showcase.
+builder.Services.AddCors(o => o.AddDefaultPolicy(p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddFeatureManagement();
@@ -62,6 +64,7 @@ if (args.Contains("--migrate"))
     return;
 }
 
+app.UseCors();
 app.UseMiddleware<ErrorMappingMiddleware>();
 app.UseMultiTenant();
 app.UseAuthentication();

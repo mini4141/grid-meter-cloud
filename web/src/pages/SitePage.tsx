@@ -36,18 +36,32 @@ export function SitePage({ api }: { api: ApiClient }) {
     void loadAll();
   }, [loadAll]);
 
-  // Estimate panel: only when the feature flag is on.
+  // Estimate panel: only when the feature flag is on. The price API is flaky by design, so retry a few times.
   useEffect(() => {
     if (!flagOn) {
       setEstimate(null);
       return;
     }
-    setEstimateError('');
-    api.api.sites
-      .byId(id)
-      .estimate.get()
-      .then((e) => setEstimate(e ?? null))
-      .catch(() => setEstimateError('Price service unavailable, try again.'));
+    let cancelled = false;
+    const attempt = (n: number) => {
+      api.api.sites
+        .byId(id)
+        .estimate.get()
+        .then((e) => {
+          if (cancelled) return;
+          setEstimate(e ?? null);
+          setEstimateError('');
+        })
+        .catch(() => {
+          if (cancelled) return;
+          if (n < 3) setTimeout(() => attempt(n + 1), 1500);
+          else setEstimateError('Price service unavailable, try again.');
+        });
+    };
+    attempt(1);
+    return () => {
+      cancelled = true;
+    };
   }, [api, id, flagOn, consumption?.totalKwh]);
 
   // After an upload, poll until the ingested total stops growing.
