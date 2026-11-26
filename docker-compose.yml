@@ -1,0 +1,65 @@
+name: grid-meter-cloud
+
+x-aws-local: &aws-local
+  AWS_ENDPOINT_URL: http://moto:5000
+  AWS_ACCESS_KEY_ID: test
+  AWS_SECRET_ACCESS_KEY: test
+  AWS_REGION: ap-southeast-2
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-CU16-ubuntu-22.04
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${SA_PASSWORD:-Your_strong_Passw0rd}
+    ports: ["1433:1433"]
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -Q 'SELECT 1' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  moto:
+    image: motoserver/moto:5.1.10
+    command: ["-H", "0.0.0.0", "-p", "5000"]
+    ports: ["5000:5000"]
+
+  pricemock:
+    build: { context: ., target: pricemock }
+    environment:
+      FAIL_RATE: ${FAIL_RATE:-0.5}
+    ports: ["5100:8080"]
+
+  migrate:
+    build: { context: ., target: api }
+    command: ["--migrate"]
+    environment: &api-env
+      <<: *aws-local
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__Default: Server=sqlserver,1433;Database=GridMeter;User Id=sa;Password=${SA_PASSWORD:-Your_strong_Passw0rd};TrustServerCertificate=True
+      PriceApi__BaseUrl: http://pricemock:8080
+      Storage__PublicServiceUrl: http://localhost:5000
+      BUILD_SHA: ${BUILD_SHA:-local}
+    depends_on:
+      sqlserver: { condition: service_healthy }
+    restart: "no"
+
+  api:
+    build: { context: ., target: api }
+    environment: *api-env
+    ports: ["8080:8080"]
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      moto: { condition: service_started }
+      pricemock: { condition: service_started }
+
+  parser:
+    build: { context: ., target: parser }
+    environment:
+      <<: *aws-local
+    depends_on: [moto]
+
+  web:
+    build: { context: ./web }
+    ports: ["5173:80"]
+    depends_on: [api]

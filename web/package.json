@@ -1,0 +1,50 @@
+{
+  "name": "grid-meter-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "lint": "eslint src e2e --max-warnings 0",
+    "lint:styles": "stylelint \"src/**/*.scss\"",
+    "test": "vitest run",
+    "e2e": "playwright test"
+  },
+  "dependencies": {
+    "@carbon/charts": "^1.27.27",
+    "@carbon/charts-react": "^1.27.27",
+    "@carbon/react": "^1.121.0",
+    "@microsoft/kiota-abstractions": "1.0.0-preview.114",
+    "@microsoft/kiota-http-fetchlibrary": "1.0.0-preview.114",
+    "@microsoft/kiota-serialization-form": "1.0.0-preview.114",
+    "@microsoft/kiota-serialization-json": "1.0.0-preview.114",
+    "@microsoft/kiota-serialization-multipart": "1.0.0-preview.114",
+    "@microsoft/kiota-serialization-text": "1.0.0-preview.114",
+    "d3": "^7.9.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.1",
+    "@testing-library/jest-dom": "^8.0.0",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.13",
+    "@types/react": "^19.3.1",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "eslint": "^10.15.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.14.0",
+    "jsdom": "^31.0.1",
+    "sass": "^1.108.2",
+    "stylelint": "^18.1.0",
+    "stylelint-config-standard-scss": "^18.0.0",
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.74.0",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}
